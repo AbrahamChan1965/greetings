@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>感恩節快樂 · Happy Thanksgiving — 基督燈臺事工</title>
+<link rel="canonical" href="https://gls.wordnspirit.com/thanksgiving/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://gls.wordnspirit.com/thanksgiving/" />
+<meta property="og:title" content="感恩節快樂 · Happy Thanksgiving — 基督燈臺事工" />
+<meta property="og:description" content="我有一句特別的話要送給你。I have a special message just for you." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ryman-alabaster: #FAF8F4;
+    --ryman-linen: #F3EFE7;
+    --gold-highlight: #F4E6BA;
+    --gold-mid: #C9A34E;
+    --gold-deep: #8C6A22;
+    --gold-gradient: linear-gradient(135deg, #F4E6BA 0%, #D5B05A 42%, #9F7A2B 100%);
+    --ink-primary: #1F1B24;
+    --ink-secondary: #585160;
+    --ink-muted: #847D8C;
+    --autumn: #A3420F;
+    --autumn-deep: #7A3410;
+    --autumn-soft: #B4561D;
+    --font-serif: 'Noto Serif TC', 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Noto Sans TC', 'Inter', -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    background: radial-gradient(circle at top, #fbe3c0 0%, #f2b872 45%, #c9672a 100%);
+    display: flex; flex-direction: column; align-items: center;
+    color: #4a2410; padding: 0 20px 48px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  .leaf {
+    position: fixed; top: -60px; font-size: 28px; pointer-events: none;
+    animation: fall linear forwards; z-index: 0;
+  }
+  @keyframes fall {
+    to { transform: translateY(110vh) rotate(720deg) translateX(var(--drift)); }
+  }
+  .topbar {
+    width: 100%; max-width: 720px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 4px 0; position: relative; z-index: 1;
+    font-size: 0.82rem; font-weight: 700; color: #5a3418;
+  }
+  .topbar a { color: inherit; text-decoration: none; }
+  .topbar a:hover { color: var(--autumn); }
+  .brand { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-serif); font-weight: 900; }
+  .seal {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--gold-gradient);
+    display: inline-flex; align-items: center; justify-content: center;
+    color: #241905; font-size: 0.8rem;
+    box-shadow: 0 3px 10px rgba(159, 122, 43, 0.35);
+  }
+  .card {
+    position: relative; z-index: 1;
+    background: #fffaf1; border: 6px double #b4561d; border-radius: 22px;
+    max-width: 620px; width: 100%; padding: 40px 34px; text-align: center;
+    box-shadow: 0 18px 45px rgba(90, 35, 5, 0.35);
+    margin-top: 22px;
+  }
+  .turkey { font-size: 64px; display: inline-block; animation: wobble 2.5s ease-in-out infinite; }
+  @keyframes wobble { 0%,100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+  h1 { font-family: var(--font-serif); font-weight: 900; font-size: 2.4rem; color: var(--autumn); margin: 8px 0 2px; letter-spacing: 2px; }
+  h1 .en { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 700; font-size: 1.7rem; letter-spacing: 1px; color: var(--autumn-soft); margin-top: 2px; }
+  .sub { font-size: 1.05rem; margin: 14px 0 26px; color: #7a3d17; line-height: 1.7; }
+  .sub .en { display: block; font-size: 0.95rem; color: #9a6a45; }
+  label { display: block; font-size: 1.1rem; margin-bottom: 10px; font-weight: 700; }
+  label .en { display: block; font-size: 0.9rem; font-weight: 500; color: #9a6a45; margin-top: 2px; }
+  input {
+    width: 100%; max-width: 360px; padding: 14px 16px; font-size: 1.2rem;
+    border: 3px solid #d98a3d; border-radius: 12px; text-align: center;
+    font-family: inherit; background: #fff; color: #4a2410; outline: none;
+  }
+  input:focus { border-color: var(--autumn); box-shadow: 0 0 0 4px rgba(217,138,61,0.25); }
+  button {
+    margin-top: 18px; padding: 14px 30px; font-size: 1.1rem; font-family: inherit;
+    font-weight: 700; color: #fff; background: var(--autumn-soft); border: none; border-radius: 40px;
+    cursor: pointer; box-shadow: 0 5px 0 var(--autumn-deep); transition: transform .1s, box-shadow .1s;
+  }
+  button:hover { background: #c4652a; }
+  button:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--autumn-deep); }
+  .btn-ghost { background: #8a6a3a; box-shadow: 0 5px 0 #5a4220; }
+  .btn-ghost:hover { background: #9c7a48; }
+  .btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-row button { font-size: 1rem; padding: 12px 22px; }
+  .copy-line { margin-top: 22px; font-size: 0.9rem; color: #9a6a45; }
+  .copy-line button { margin-top: 8px; font-size: 0.92rem; padding: 9px 18px; box-shadow: 0 3px 0 var(--autumn-deep); }
+  .hidden { display: none; }
+  .fade { animation: fadeIn .9s ease forwards; opacity: 0; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  .hello { font-family: var(--font-serif); font-weight: 900; font-size: 1.8rem; color: var(--autumn); margin-bottom: 6px; }
+  .hello .en { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 700; font-size: 1.35rem; color: var(--autumn-soft); margin-top: 2px; }
+  .affirm { font-size: 1.25rem; line-height: 1.7; margin: 18px 0 22px; }
+  .affirm .en { display: block; font-size: 1.02rem; color: #7a5a3a; margin-top: 8px; line-height: 1.6; }
+  .verse {
+    background: #fdf0dc; border-left: 6px solid #d98a3d; border-radius: 10px;
+    padding: 18px 20px; text-align: left; font-style: italic; line-height: 1.7;
+    font-size: 1.05rem; margin-bottom: 26px;
+  }
+  .verse .en { display: block; margin-top: 10px; font-size: 0.95rem; color: #6a4a28; }
+  .ref { display: block; margin-top: 10px; font-style: normal; font-weight: 700; text-align: right; color: var(--autumn); }
+  .closing { font-size: 1.2rem; line-height: 1.7; margin-top: 8px; }
+  .closing .en { display: block; font-size: 1rem; color: #7a5a3a; margin-top: 6px; }
+  .closing strong { color: var(--autumn); }
+  .sig { font-family: var(--font-serif); font-weight: 700; font-size: 1.35rem; margin-top: 14px; color: #7a3d17; }
+  .sig .en { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.1rem; color: #9a6a45; margin-top: 2px; }
+  .devotions { margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(180, 86, 29, 0.25); font-size: 0.95rem; line-height: 1.8; color: #7a5a3a; }
+  .devotions a { color: var(--autumn); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  .err { color: #b3261e; margin-top: 10px; min-height: 1.2em; font-size: 1rem; }
+  .notice { margin-top: 26px; font-size: 0.72rem; color: #9a7458; line-height: 1.5; }
+  .copied { color: #2e7d32; font-weight: 700; }
+  @media (max-width: 520px) {
+    .card { padding: 32px 22px; }
+    h1 { font-size: 2rem; }
+    .topbar { font-size: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="https://gls.wordnspirit.com/"><span class="seal">✦</span>基督燈臺事工 · Golden Lampstand</a>
+  <a href="https://gls.wordnspirit.com/">← 返回首頁 · Home</a>
+</div>
+
+<div class="card">
+  <!-- Screen 1: name entry -->
+  <div id="start">
+    <div class="turkey">🦃</div>
+    <h1>感恩節快樂<span class="en">Happy Thanksgiving!</span></h1>
+    <p class="sub">我有一句特別的話要送給你。<span class="en">I have a special message just for you. 🍂</span></p>
+    <label for="nameBox">請輸入你的名字<span class="en">Type your name below:</span></label>
+    <input id="nameBox" type="text" placeholder="你的名字 · Your name" maxlength="30" autocomplete="off" />
+    <div class="err" id="err"></div>
+    <button id="goBtn">領受祝福 🥧<br /><span style="font-size:0.85rem;font-weight:500">Get My Message</span></button>
+    <div class="copy-line">
+      <div>把這張卡片發給朋友 · Share this card with friends</div>
+      <button id="copyBtn" type="button">複製連結 · Copy Link</button>
+      <span id="copiedMsg" class="copied hidden">已複製！Copied!</span>
+    </div>
+  </div>
+
+  <!-- Screen 2: message -->
+  <div id="message" class="hidden">
+    <div class="turkey">🦃</div>
+    <div class="hello fade" id="hello"></div>
+    <p class="affirm fade" id="affirm" style="animation-delay:.4s"></p>
+    <div class="verse fade" id="verse" style="animation-delay:.9s"></div>
+    <div class="fade" style="animation-delay:1.5s">
+      <p class="closing">願你在這個感恩節裡，數算恩典，心得安息。<strong>我們是有福的！</strong> 🙏<span class="en">Praying you have a blessed Thanksgiving, counting every grace. <strong>We are blessed!</strong> 🙏</span></p>
+      <p class="sig">— 陳曉東牧師<span class="en">Pastor Abraham Chan</span></p>
+      <div class="devotions">
+        願我們在聖言靈禱中同行 · Walk with us in Word &amp; Spirit devotions<br />
+        <a href="https://devotions.wordnspirit.com/">中文靈修</a> · <a href="https://devotions.wordnspirit.com/en/">English Devotions</a>
+      </div>
+      <div class="btn-row" style="margin-top:22px">
+        <button id="againBtn" type="button">再抽一句 🍁<br /><span style="font-size:0.85rem;font-weight:500">Another Message</span></button>
+        <button id="restartBtn" type="button" class="btn-ghost">重新開始<br /><span style="font-size:0.85rem;font-weight:500">Start Over</span></button>
+      </div>
+    </div>
+  </div>
+  <p class="notice">中文經文出自和合本（CUV）。Scripture quotations in English are from the ESV® Bible (The Holy Bible, English Standard Version®), © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.</p>
+</div>
+
+<script>
+  // Each message pairs an encouraging sentence with a matching verse (CUV + ESV).
+  const messages = [
+    { a: "{name}，你是獨一無二的。神造你，是有目的的。",
+      ae: "{name}, you are one of a kind. God made you on purpose and for a purpose.",
+      v: "我要稱謝你，因我受造，奇妙可畏；你的作為奇妙，這是我心深知道的。",
+      ve: "I praise you, for I am fearfully and wonderfully made. Wonderful are your works; my soul knows it very well.",
+      r: "詩篇 139:14 · Psalm 139:14" },
+    { a: "{name}，神對你的人生有美好的計劃，你的未來充滿盼望。",
+      ae: "{name}, God has great plans for your life, and your future is full of hope.",
+      v: "耶和華說：我知道我向你們所懷的意念是賜平安的意念，不是降災禍的意念，要叫你們末後有指望。",
+      ve: "For I know the plans I have for you, declares the LORD, plans for welfare and not for evil, to give you a future and a hope.",
+      r: "耶利米書 29:11 · Jeremiah 29:11" },
+    { a: "{name}，你比自己想的更堅強。靠着那加給你力量的，你凡事都能做。",
+      ae: "{name}, you are stronger than you think. Through him who strengthens you, you can do all things.",
+      v: "我靠着那加給我力量的，凡事都能做。",
+      ve: "I can do all things through him who strengthens me.",
+      r: "腓立比書 4:13 · Philippians 4:13" },
+    { a: "{name}，一顆感恩的心，會讓身邊的人都變得更好。",
+      ae: "{name}, a thankful heart makes everyone around you better.",
+      v: "凡事謝恩，因為這是神在基督耶穌裡向你們所定的旨意。",
+      ve: "Give thanks in all circumstances; for this is the will of God in Christ Jesus for you.",
+      r: "帖撒羅尼迦前書 5:18 · 1 Thessalonians 5:18" },
+    { a: "{name}，我為你感謝神。你讓這個世界更美好。",
+      ae: "{name}, I thank God for you. You make this world a better place.",
+      v: "你們要稱謝耶和華，因他本為善；他的慈愛永遠長存。",
+      ve: "Oh give thanks to the LORD, for he is good, for his steadfast love endures forever!",
+      r: "詩篇 107:1 · Psalm 107:1" },
+    { a: "{name}，要剛強壯膽。你從來不是獨自面對一切。",
+      ae: "{name}, be strong and courageous. You never face anything alone.",
+      v: "我豈沒有吩咐你嗎？你當剛強壯膽！不要懼怕，也不要驚惶，因為你無論往哪裡去，耶和華你的神必與你同在。",
+      ve: "Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the LORD your God is with you wherever you go.",
+      r: "約書亞記 1:9 · Joshua 1:9" },
+    { a: "{name}，你是神手中的工作。繼續使用他給你的恩賜，去行善。",
+      ae: "{name}, you are God's workmanship. Keep using the gifts he gave you to do good.",
+      v: "我們原是他的工作，在基督耶穌裡造成的，為要叫我們行善，就是神所預備叫我們行的。",
+      ve: "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.",
+      r: "以弗所書 2:10 · Ephesians 2:10" },
+    { a: "{name}，你的光照亮身邊的人。不要把光藏起來。",
+      ae: "{name}, your light shines on the people around you. Don't hide it.",
+      v: "你們是世上的光。城造在山上是不能隱藏的。",
+      ve: "You are the light of the world. A city set on a hill cannot be hidden.",
+      r: "馬太福音 5:14 · Matthew 5:14" },
+    { a: "{name}，神不單愛你，他更因你歡欣喜樂。",
+      ae: "{name}, God doesn't just love you — he rejoices over you!",
+      v: "耶和華你的神是施行拯救、大有能力的主。他在你中間必因你歡欣喜樂，默然愛你，且因你喜樂而歡呼。",
+      ve: "The LORD your God is in your midst, a mighty one who will save; he will rejoice over you with gladness; he will quiet you by his love; he will exult over you with loud singing.",
+      r: "西番雅書 3:17 · Zephaniah 3:17" },
+    { a: "{name}，當稱謝進入他的門，當讚美進入他的院。願這個感恩節，你滿心歡喜。",
+      ae: "{name}, enter his gates with thanksgiving, and his courts with praise. May your heart be full this Thanksgiving.",
+      v: "當稱謝進入他的門，當讚美進入他的院；當感謝他，稱頌他的名。",
+      ve: "Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!",
+      r: "詩篇 100:4 · Psalm 100:4" },
+    { a: "{name}，專心仰賴耶和華。想不通的事，交託給他。",
+      ae: "{name}, trust in the LORD with all your heart. Leave what you can't figure out to him.",
+      v: "你要專心仰賴耶和華，不可倚靠自己的聰明。",
+      ve: "Trust in the LORD with all your heart, and do not lean on your own understanding.",
+      r: "箴言 3:5 · Proverbs 3:5" },
+    { a: "{name}，等候耶和華的必從新得力。這個感恩節，好好安息，神必給你新的力量。",
+      ae: "{name}, those who wait for the LORD shall renew their strength. Rest well this Thanksgiving — God will give you new strength.",
+      v: "但那等候耶和華的必從新得力。他們必如鷹展翅上騰；他們奔跑卻不困倦，行走卻不疲乏。",
+      ve: "But they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.",
+      r: "以賽亞書 40:31 · Isaiah 40:31" },
+    { a: "{name}，願耶和華賜福給你，保護你；願他的臉光照你，賜恩給你。",
+      ae: "{name}, may the LORD bless you and keep you; may his face shine upon you and be gracious to you.",
+      v: "願耶和華賜福給你，保護你。願耶和華使他的臉光照你，賜恩給你。",
+      ve: "The LORD bless you and keep you; the LORD make his face to shine upon you and be gracious to you.",
+      r: "民數記 6:24–25 · Numbers 6:24–25" },
+    { a: "{name}，各樣美善的恩賜都是從上頭來的。你就是一份從神而來的禮物。",
+      ae: "{name}, every good gift comes from above — and you are one of God's gifts to us.",
+      v: "各樣美善的恩賜和各樣全備的賞賜都是從上頭來的，從眾光之父那裡降下來的；在他並沒有改變，也沒有轉動的影兒。",
+      ve: "Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change.",
+      r: "雅各書 1:17 · James 1:17" },
+    { a: "{name}，無論做什麼，都要從心裡做，像是給主做的。你的擺上，神都看見。",
+      ae: "{name}, whatever you do, work heartily, as for the Lord. God sees all you have given.",
+      v: "無論做什麼，都要從心裡做，像是給主做的，不是給人做的。",
+      ve: "Whatever you do, work heartily, as for the Lord and not for men.",
+      r: "歌羅西書 3:23 · Colossians 3:23" },
+    { a: "{name}，你是有福的，也是別人的祝福。",
+      ae: "{name}, you are blessed, and you are a blessing to others.",
+      v: "我必叫你成為大國。我必賜福給你，叫你的名為大；你也要叫別人得福。",
+      ve: "And I will make of you a great nation, and I will bless you and make your name great, so that you will be a blessing.",
+      r: "創世記 12:2 · Genesis 12:2" }
+  ];
+
+  const $ = id => document.getElementById(id);
+  let currentName = "";
+  let lastIndex = -1;
+
+  function clean(text) {
+    const d = document.createElement("div");
+    d.textContent = text;
+    return d.innerHTML;
+  }
+
+  function pickMessage() {
+    let i;
+    do { i = Math.floor(Math.random() * messages.length); } while (i === lastIndex && messages.length > 1);
+    lastIndex = i;
+    return messages[i];
+  }
+
+  function restartAnimations() {
+    document.querySelectorAll("#message .fade").forEach(el => {
+      el.style.animation = "none";
+      el.offsetHeight; // force reflow
+      el.style.animation = "";
+    });
+  }
+
+  function showMessage() {
+    const m = pickMessage();
+    const safeName = clean(currentName);
+    $("hello").innerHTML = "感恩節快樂，" + safeName + "！<span class='en'>Happy Thanksgiving, " + safeName + "!</span>";
+    $("affirm").innerHTML = m.a.replace("{name}", "<strong>" + safeName + "</strong>") +
+      "<span class='en'>" + m.ae.replace("{name}", "<strong>" + safeName + "</strong>") + "</span>";
+    $("verse").innerHTML = "“" + m.v + "”<span class='en'>“" + m.ve + "”</span><span class='ref'>" + m.r + "</span>";
+    restartAnimations();
+    for (let k = 0; k < 18; k++) setTimeout(dropLeaf, k * 120);
+  }
+
+  function start() {
+    const name = $("nameBox").value.trim();
+    if (!name) { $("err").textContent = "別忘了輸入你的名字 😊 · Don't forget to type your name!"; $("nameBox").focus(); return; }
+    $("err").textContent = "";
+    currentName = name.charAt(0).toUpperCase() + name.slice(1);
+    $("start").classList.add("hidden");
+    $("message").classList.remove("hidden");
+    showMessage();
+  }
+
+  $("goBtn").addEventListener("click", start);
+  $("nameBox").addEventListener("keydown", e => { if (e.key === "Enter") start(); });
+  $("againBtn").addEventListener("click", showMessage);
+  $("restartBtn").addEventListener("click", () => {
+    $("message").classList.add("hidden");
+    $("start").classList.remove("hidden");
+    $("nameBox").value = "";
+    $("nameBox").focus();
+  });
+  $("copyBtn").addEventListener("click", async () => {
+    const url = window.location.href;
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch (e) {
+      const ta = document.createElement("textarea");
+      ta.value = url; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); } catch (e2) {}
+      document.body.removeChild(ta);
+    }
+    $("copiedMsg").classList.remove("hidden");
+    setTimeout(() => $("copiedMsg").classList.add("hidden"), 2500);
+  });
+
+  // Falling leaves
+  const leafIcons = ["🍂", "🍁", "🍃", "🌾"];
+  function dropLeaf() {
+    const leaf = document.createElement("div");
+    leaf.className = "leaf";
+    leaf.textContent = leafIcons[Math.floor(Math.random() * leafIcons.length)];
+    leaf.style.left = Math.random() * 100 + "vw";
+    leaf.style.fontSize = (20 + Math.random() * 22) + "px";
+    leaf.style.setProperty("--drift", (Math.random() * 200 - 100) + "px");
+    leaf.style.animationDuration = (5 + Math.random() * 5) + "s";
+    document.body.appendChild(leaf);
+    setTimeout(() => leaf.remove(), 11000);
+  }
+  setInterval(dropLeaf, 900);
+  $("nameBox").focus();
+</script>
+</body>
+</html>
