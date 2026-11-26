@@ -11,7 +11,7 @@
 <meta property="og:image" content="https://greetings.wordnspirit.com/thanksgiving/og-image-v5.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="1621 年普利茅斯：清教徒與萬帕諾亞格人圍桌禱告">
+<meta property="og:image:alt" content="1621 年普利茅斯：清教徒與萬帕諾亞格人圍著長桌，低頭禱告謝恩">
 <meta property="og:url" content="https://greetings.wordnspirit.com/thanksgiving/">
 <link rel="canonical" href="https://greetings.wordnspirit.com/thanksgiving/">
 <style>
@@ -45,8 +45,7 @@
   .verse{font-size:clamp(22px,4.4vw,38px);line-height:1.5;margin:0;font-weight:600}
   .verse small{display:block;font-size:.62em;letter-spacing:.1em;opacity:.9;margin-top:6px}
   .paper{max-width:680px;margin:0 auto;padding:44px 22px 30px}
-  h1{font-size:clamp(26px,5vw,36px);line-height:1.4;text-align:center;margin:0 0 6px;color:#5b3f1a}
-  .sub{text-align:center;color:#8a6d2f;letter-spacing:.12em;font-size:14px;margin:0 0 20px}
+  h1{font-size:clamp(26px,5vw,36px);line-height:1.4;text-align:center;margin:0 0 26px;color:#5b3f1a}
   .paper p{margin:0 0 18px;font-size:17px}
   h2{font-size:21px;color:#5b3f1a;margin:34px 0 14px;text-align:center}
   .poem{background:#fffdf6;border:1px solid #e3d3ae;border-radius:12px;padding:22px 20px 18px;text-align:center}
@@ -54,13 +53,10 @@
   .listen{display:inline-block;font-family:inherit;font-size:15.5px;letter-spacing:.06em;padding:10px 22px;border-radius:999px;border:1px solid #c9a24b;background:#c9a24b;color:#2b2118;cursor:pointer}
   .listen.speaking{background:#8a6d2f;border-color:#8a6d2f;color:#fdf8ec}
   .poem .hint{font-size:13px;color:#8a7a5c;margin:10px 0 0}
-  .narrate{text-align:center;margin:0 0 26px}
-  .narrate .listen{font-size:16.5px;padding:12px 26px}
-  .narrate .hint{font-size:13px;color:#8a7a5c;margin:10px 0 0}
-  .sig{margin:34px 0 6px;font-size:18px;color:#5b3f1a;text-align:center}
-  .copyrow{text-align:center;margin:22px 0 6px}
-  .copybtn{display:inline-block;font-family:inherit;font-size:16px;padding:11px 24px;border-radius:999px;border:1px solid #8a6d2f;background:#fffdf6;color:#6b4d16;cursor:pointer}
-  .copybtn.done{background:#e8c878;border-color:#c9a24b;color:#2b2118}
+  .playrow{text-align:center;margin:0 0 28px}
+  .playbig{width:88px;height:88px;border-radius:50%;border:1px solid #c9a24b;background:#c9a24b;color:#2b2118;font-size:30px;line-height:1;cursor:pointer;box-shadow:0 4px 18px rgba(139,109,47,.35);animation:pulse 2.6s ease-in-out infinite}
+  .playbig.speaking{background:#8a6d2f;border-color:#8a6d2f;color:#fdf8ec;animation:none}
+  @keyframes pulse{0%,100%{box-shadow:0 4px 18px rgba(139,109,47,.35)}50%{box-shadow:0 4px 28px rgba(139,109,47,.6)}}
   footer{border-top:1px solid #e3d3ae;margin-top:34px;padding:20px 0 26px;text-align:center;font-size:14px;color:#8a7a5c;line-height:2}
   footer a{color:#8a6d2f}
   @media (max-width:520px){
@@ -163,16 +159,18 @@
 
 <main class="paper">
   <h1><span class="zh">1621 普利茅斯的秋光與感恩</span><span class="en">Autumn Light &amp; Gratitude Since 1621</span></h1>
-  <p class="sub"><span class="zh">一張安靜的卡片，送給你</span><span class="en">A quiet card, for you</span></p>
 
-  <div class="narrate">
-    <button type="button" class="listen" id="narrateBtn" onclick="togglePlay('narration')"><span class="zh">▶ 聽牧師的話</span><span class="en">▶ Listen</span></button>
-    <p class="hint"><span class="zh">陳曉東牧師親自錄音</span><span class="en">Recorded by Rev. Dr. Abraham Chan</span></p>
+  <div class="playrow">
+    <button type="button" class="playbig" id="narrateBtn" onclick="togglePlay('narration')" aria-label="播放錄音">▶</button>
   </div>
 
-  <p><span class="zh">在一個安靜的秋日，一張長桌擺在普利茅斯的海灣邊。清教徒與萬帕諾亞格人圍坐在一起，為著剛剛收穫的玉米、南瓜與野禽，低頭謝恩。桌上的食物不多，卻足夠讓一群歷經嚴冬、幾乎失去一切的人，重新學會一件事：恩典不是理所當然的。</span><span class="en">On a quiet autumn day, a long table stood by the bay at Plymouth. Pilgrims and Wampanoag sat together around it, bowing their heads in thanks for the corn, the pumpkins, and the wild fowl they had just harvested. The food was not plentiful, yet it was enough to teach a people who had survived a terrible winter, and lost nearly everything, one thing again: grace is never to be taken for granted.</span></p>
+  <p><span class="zh">親愛的朋友，感恩節快樂。</span><span class="en">Dear friend, Happy Thanksgiving.</span></p>
 
-  <p><span class="zh">這張卡片所記念的，正是那一刻——恩典從上頭來。雅各書說：「各樣美善的恩賜和各樣全備的賞賜都是從上頭來的。」就像嗎哪一樣，食物、友誼與平安，都不是我們掙來的，而是從天上緩緩降下的禮物。</span><span class="en">This card remembers that moment — the moment grace came down from above. As James writes, “Every good gift and every perfect gift is from above.” Like manna, food, friendship, and peace are not things we earn; they are gifts that descend gently from heaven.</span></p>
+  <p><span class="zh">四百多年前，在普利茅斯的海灣邊，一張長桌擺在秋光裡。清教徒和萬帕諾亞格人圍坐在一起，為剛收穫的玉米、南瓜和野禽，低頭謝恩。桌上的食物不多，卻足夠讓一群歷經嚴冬、幾乎失去一切的人，重新學會一件事：恩典不是理所當然的。</span><span class="en">More than four hundred years ago, on a bay at Plymouth, a long table stood in the autumn light. Pilgrims and Wampanoag sat together around it, bowing their heads in thanks for the corn, the pumpkins, and the wild fowl they had just harvested. The food was not plentiful, yet it was enough to teach a people who had survived a terrible winter, and lost nearly everything, one thing again: grace is never to be taken for granted.</span></p>
+
+  <p><span class="zh">聖經說：各樣美善的恩賜和各樣全備的賞賜，都是從上頭來的。就像嗎哪一樣，食物、友誼與平安，都不是我們掙來的，而是從天上緩緩降下的禮物。</span><span class="en">The Bible says: every good gift and every perfect gift is from above. Like manna, food, friendship, and peace are not things we earn; they are gifts that descend gently from heaven.</span></p>
+
+  <p><span class="zh">願這一份從上頭來的恩典，也臨到你和你的家人。感恩節快樂，我是陳曉東。</span><span class="en">May this grace from above fall on you and your family too. Happy Thanksgiving. I am Abraham Chan.</span></p>
 
   <h2><span class="zh">感恩詩歌</span><span class="en">Thanksgiving Poems</span></h2>
   <div class="poem">
@@ -182,12 +180,6 @@
     <p class="hint"><span class="zh">按一下即可聽到朗誦</span><span class="en">Tap to hear it read aloud</span></p>
   </div>
 
-  <p class="sig">陳曉東 敬賀 · Rev. Dr. Abraham Chan</p>
-
-  <div class="copyrow">
-    <button type="button" class="copybtn" id="copyBtn" onclick="copyLink()"><span class="zh">複製分享連結</span><span class="en">Copy sharing link</span></button>
-  </div>
-
   <footer>
     Word &amp; Spirit · New England<br>
     <a href="https://devotions.wordnspirit.com/">中文靈修站</a> · <a href="https://devotions.wordnspirit.com/en/">English Devotions</a>
@@ -195,6 +187,7 @@
 </main>
 
 <script>
+var AUDIO_BASE = 'audio/';
 var NARRATION = {
   cmn: ["親愛的朋友，感恩節快樂。","四百多年前，在普利茅斯的海灣邊，一張長桌擺在秋光裡。清教徒和萬帕諾亞格人圍坐在一起，為剛收穫的玉米、南瓜和野禽，低頭謝恩。桌上的食物不多，卻足夠讓一群歷經嚴冬、幾乎失去一切的人，重新學會一件事：恩典不是理所當然的。","聖經說：各樣美善的恩賜和各樣全備的賞賜，都是從上頭來的。就像嗎哪一樣，食物、友誼與平安，都不是我們掙來的，而是從天上緩緩降下的禮物。","願這一份從上頭來的恩典，也臨到你和你的家人。感恩節快樂，我是陳曉東。"],
   yue: ["親愛的朋友，感恩節快樂。","四百多年前，在普利茅斯的海灣邊，一張長桌擺在秋光裡。清教徒和萬帕諾亞格人圍坐在一起，為剛收穫的玉米、南瓜和野禽，低頭謝恩。桌上的食物不多，卻足夠讓一群歷經嚴冬、幾乎失去一切的人，重新學會一件事：恩典不是理所當然的。","聖經說：各樣美善的恩賜和各樣全備的賞賜，都是從上頭來的。就像嗎哪一樣，食物、友誼與平安，都不是我們掙來的，而是從天上緩緩降下的禮物。","願這一份從上頭來的恩典，也臨到你和你的家人。感恩節快樂，我是陳曉東。"],
@@ -207,6 +200,7 @@ var POEMS = {
 };
 var SPEECH_LANG = {cmn: 'zh-CN', yue: 'zh-HK', en: 'en-US'};
 var playing = null; // {kind, audio}
+var audioCache = {};
 function lang(){ return document.body.getAttribute('data-lang') || 'cmn'; }
 function setLang(l){
   stopAll();
@@ -214,21 +208,24 @@ function setLang(l){
   document.getElementById('btn-cmn').classList.toggle('on', l === 'cmn');
   document.getElementById('btn-yue').classList.toggle('on', l === 'yue');
   document.getElementById('btn-en').classList.toggle('on', l === 'en');
+  setBtn('narration', 'idle');
+  setBtn('poem', 'idle');
   try{ localStorage.setItem('thanks-lang', l); }catch(e){}
+  tryAutoplay();
 }
 function btnFor(kind){ return document.getElementById(kind === 'narration' ? 'narrateBtn' : 'poemBtn'); }
 function labelFor(kind, state){
   var l = lang();
   if(kind === 'narration'){
-    if(state === 'playing') return l === 'en' ? '■ Stop' : '■ 停止播放';
-    return l === 'en' ? '▶ Listen' : '▶ 聽牧師的話';
+    return state === 'playing' ? '■' : '▶';
   }
   if(state === 'playing') return l === 'en' ? '■ Stop' : '■ 停止朗誦';
   return l === 'en' ? '▶ Listen to this poem' : '▶ 朗誦這首詩';
 }
 function setBtn(kind, state){
   var b = btnFor(kind);
-  b.innerHTML = labelFor(kind, state);
+  if(!b) return;
+  b.textContent = labelFor(kind, state);
   b.classList.toggle('speaking', state === 'playing');
 }
 function stopAll(){
@@ -253,51 +250,50 @@ function speakFallback(kind, l){
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(u);
 }
+function fileExists(url){
+  if(audioCache[url] !== undefined) return Promise.resolve(audioCache[url]);
+  return fetch(url, {method: 'HEAD'}).then(function(r){ audioCache[url] = r.ok; return r.ok; }).catch(function(){ audioCache[url] = false; return false; });
+}
+function playRecording(kind, l){
+  var url = AUDIO_BASE + kind + '-' + l + '.mp3';
+  var a = new Audio(url);
+  playing = {kind: kind, audio: a};
+  setBtn(kind, 'playing');
+  a.onended = function(){ setBtn(kind, 'idle'); playing = null; };
+  a.onerror = function(){ playing = null; setBtn(kind, 'idle'); };
+  a.play().catch(function(){ playing = null; setBtn(kind, 'idle'); });
+}
 function togglePlay(kind){
   if(playing && playing.kind === kind){ stopAll(); return; }
   stopAll();
   var l = lang();
-  var url = 'audio/' + kind + '-' + l + '.mp3';
+  var url = AUDIO_BASE + kind + '-' + l + '.mp3';
   setBtn(kind, 'playing');
   playing = {kind: kind, audio: null};
-  fetch(url, {method: 'HEAD'}).then(function(r){
-    if(!r.ok){ throw new Error('no file'); }
-    var a = new Audio(url);
-    playing.audio = a;
-    a.onended = function(){ setBtn(kind, 'idle'); playing = null; };
-    a.onerror = function(){ speakFallback(kind, l); };
-    a.play().catch(function(){ speakFallback(kind, l); });
-  }).catch(function(){
-    speakFallback(kind, l);
+  fileExists(url).then(function(ok){
+    if(ok){ playRecording(kind, l); }
+    else{ speakFallback(kind, l); }
   });
 }
+function tryAutoplay(){
+  if(playing) return;
+  var l = lang();
+  var url = AUDIO_BASE + 'narration-' + l + '.mp3';
+  fileExists(url).then(function(ok){
+    if(!ok || playing) return;
+    playRecording('narration', l);
+  });
+}
+document.addEventListener('pointerdown', function(e){
+  if(e.target && e.target.closest && e.target.closest('button')) return;
+  if(!playing) tryAutoplay();
+});
 if('speechSynthesis' in window){ window.speechSynthesis.onvoiceschanged = function(){}; }
-function copyLink(){
-  var url = 'https://greetings.wordnspirit.com/thanksgiving/';
-  var btn = document.getElementById('copyBtn');
-  var done = function(){
-    btn.classList.add('done');
-    btn.innerHTML = lang() === 'en' ? 'Link copied ✓' : '已複製連結 ✓';
-    setTimeout(function(){
-      btn.classList.remove('done');
-      btn.innerHTML = '<span class="zh">複製分享連結</span><span class="en">Copy sharing link</span>';
-    }, 2200);
-  };
-  if(navigator.clipboard && navigator.clipboard.writeText){
-    navigator.clipboard.writeText(url).then(done, function(){ fallbackCopy(url); done(); });
-  }else{ fallbackCopy(url); done(); }
-}
-function fallbackCopy(text){
-  var ta = document.createElement('textarea');
-  ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
-  document.body.appendChild(ta); ta.select();
-  try{ document.execCommand('copy'); }catch(e){}
-  document.body.removeChild(ta);
-}
 try{
   var saved = localStorage.getItem('thanks-lang');
   if(saved === 'cmn' || saved === 'yue' || saved === 'en'){ setLang(saved); }
   else if(saved === 'zh'){ setLang('cmn'); }
+  else{ tryAutoplay(); }
 }catch(e){}
 </script>
 </body>
