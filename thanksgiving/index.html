@@ -21,6 +21,9 @@
   body[data-lang="cmn"] .en{display:none}
   body[data-lang="yue"] .en{display:none}
   body[data-lang="en"] .zh{display:none}
+  body[data-lang="cmn"] .poem-yue, body[data-lang="cmn"] .poem-en{display:none}
+  body[data-lang="yue"] .poem-cmn, body[data-lang="yue"] .poem-en{display:none}
+  body[data-lang="en"] .poem-cmn, body[data-lang="en"] .poem-yue{display:none}
   a{color:#8a6d2f}
   .topbar{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;color:#fdf8ec;text-shadow:0 1px 6px rgba(0,0,0,.55)}
   .topbar a{color:#fdf8ec;text-decoration:none;font-weight:700;letter-spacing:.06em}
@@ -174,8 +177,9 @@
 
   <h2><span class="zh">感恩詩歌</span><span class="en">Thanksgiving Poems</span></h2>
   <div class="poem">
-    <p class="lines zh">秋光灑在普利茅斯，<br>海灣靜靜聽禱聲。<br>玉米南瓜擺滿桌，<br>鹿肉魚鮮謝主恩。<br>嚴冬已過春又來，<br>存留性命非偶然。<br>各樣美善從上頭，<br>嗎哪降下似甘霖。<br>清教徒與原住民，<br>圍桌同坐一家親。<br>不同言語同一心，<br>感恩化作歌聲新。<br>願這恩典臨我家，<br>親人朋友同蒙福。<br>數算主恩心安息，<br>年年秋天唱感恩。</p>
-    <p class="lines en">Autumn light on Plymouth Bay,<br>The tide keeps time with prayer.<br>Corn and pumpkin fill the board,<br>Venison and fish are there.<br>The winter passed, the spring returned,<br>Our lives were not our own.<br>Every good gift from above,<br>Like manna gently sown.<br>The Pilgrim and the Native son<br>Sit down as one at the board.<br>Different tongues, one thankful heart,<br>Our gratitude to the Lord.<br>May this grace fall on my home,<br>On family, friend, and call.<br>Counting mercies, hearts at rest,<br>Thanksgiving crowns it all.</p>
+    <p class="lines poem-cmn">秋光灑在普利茅斯，<br>海灣靜靜聽禱聲。<br>玉米南瓜，擺滿桌。<br>野味海鮮謝主恩。<br>秋收之後是寒冬，<br>存留性命非偶然。<br>各樣美善上頭來，<br>嗎哪降下似飄雪。<br>天路客與原住民，<br>圍桌同坐一家親。<br>語言不同，相包容，<br>感恩祈禱作歌聲。<br>上主恩典臨眾人，<br>親朋好友同蒙福。<br>數算主恩心安息，<br>年年秋天唱感恩。</p>
+    <p class="lines poem-yue">秋光灑在普利茅斯，<br>海灣靜靜聽禱聲。<br>玉米南瓜，擺滿枱。<br>野味海鮮謝主恩。<br>秋收之後是寒冬，<br>存留性命非偶然。<br>各樣美善上頭來，<br>嗎哪降下似飄雪。<br>天路客與原住民，<br>圍枱同坐一家親。<br>語言不同，相包容，<br>感恩祈禱作歌聲。<br>上主恩典臨眾人，<br>親朋好友同蒙福。<br>數算主恩心安息，<br>年年秋天唱感恩。</p>
+    <p class="lines poem-en">Autumn light on Plymouth Bay,<br>The tide keeps time with prayer.<br>Corn and pumpkin fill the board,<br>Wild game and seafood, thanks to the Lord.<br>After the harvest came the winter cold,<br>Our lives were not our own.<br>Every good gift from above,<br>Like manna falling as snow.<br>The Pilgrim and the Native son<br>Sit down as one at the board.<br>Different tongues, they embrace as one,<br>Thankful prayer becomes a song.<br>The Lord's grace falls on all,<br>Family and friends are blessed.<br>Counting mercies, hearts at rest,<br>Thanksgiving crowns it all.</p>
     <button type="button" class="listen" id="poemBtn" onclick="togglePlay('poem')"><span class="zh">▶ 朗誦這首詩</span><span class="en">▶ Listen to this poem</span></button>
     <p class="hint"><span class="zh">按一下即可聽到朗誦</span><span class="en">Tap to hear it read aloud</span></p>
   </div>
@@ -194,9 +198,9 @@ var NARRATION = {
   en: ["Dear friend, Happy Thanksgiving.","More than four hundred years ago, on a bay at Plymouth, a long table stood in the autumn light. Pilgrims and Wampanoag sat together around it, bowing their heads in thanks for the corn, the pumpkins, and the wild fowl they had just harvested. The food was not plentiful, yet it was enough to teach a people who had survived a terrible winter, and lost nearly everything, one thing again: grace is never to be taken for granted.","The Bible says: every good gift and every perfect gift is from above. Like manna, food, friendship, and peace are not things we earn; they are gifts that descend gently from heaven.","May this grace from above fall on you and your family too, and thank you for walking with me, my family, and the Golden Lampstand Ministry on the journey of ministry. Happy Thanksgiving. Rev. Dr. Abraham Chan, 11.26.2026."]
 };
 var POEMS = {
-  cmn: ["秋光灑在普利茅斯，","海灣靜靜聽禱聲。","玉米南瓜擺滿桌，","鹿肉魚鮮謝主恩。","嚴冬已過春又來，","存留性命非偶然。","各樣美善從上頭，","嗎哪降下似甘霖。","清教徒與原住民，","圍桌同坐一家親。","不同言語同一心，","感恩化作歌聲新。","願這恩典臨我家，","親人朋友同蒙福。","數算主恩心安息，","年年秋天唱感恩。"],
-  yue: ["秋光灑在普利茅斯，","海灣靜靜聽禱聲。","玉米南瓜擺滿桌，","鹿肉魚鮮謝主恩。","嚴冬已過春又來，","存留性命非偶然。","各樣美善從上頭，","嗎哪降下似甘霖。","清教徒與原住民，","圍桌同坐一家親。","不同言語同一心，","感恩化作歌聲新。","願這恩典臨我家，","親人朋友同蒙福。","數算主恩心安息，","年年秋天唱感恩。"],
-  en: ["Autumn light on Plymouth Bay,","The tide keeps time with prayer.","Corn and pumpkin fill the board,","Venison and fish are there.","The winter passed, the spring returned,","Our lives were not our own.","Every good gift from above,","Like manna gently sown.","The Pilgrim and the Native son","Sit down as one at the board.","Different tongues, one thankful heart,","Our gratitude to the Lord.","May this grace fall on my home,","On family, friend, and call.","Counting mercies, hearts at rest,","Thanksgiving crowns it all."]
+  cmn: ["秋光灑在普利茅斯，","海灣靜靜聽禱聲。","玉米南瓜，擺滿桌。","野味海鮮謝主恩。","秋收之後是寒冬，","存留性命非偶然。","各樣美善上頭來，","嗎哪降下似飄雪。","天路客與原住民，","圍桌同坐一家親。","語言不同，相包容，","感恩祈禱作歌聲。","上主恩典臨眾人，","親朋好友同蒙福。","數算主恩心安息，","年年秋天唱感恩。"],
+  yue: ["秋光灑在普利茅斯，","海灣靜靜聽禱聲。","玉米南瓜，擺滿枱。","野味海鮮謝主恩。","秋收之後是寒冬，","存留性命非偶然。","各樣美善上頭來，","嗎哪降下似飄雪。","天路客與原住民，","圍枱同坐一家親。","語言不同，相包容，","感恩祈禱作歌聲。","上主恩典臨眾人，","親朋好友同蒙福。","數算主恩心安息，","年年秋天唱感恩。"],
+  en: ["Autumn light on Plymouth Bay,","The tide keeps time with prayer.","Corn and pumpkin fill the board,","Wild game and seafood, thanks to the Lord.","After the harvest came the winter cold,","Our lives were not our own.","Every good gift from above,","Like manna falling as snow.","The Pilgrim and the Native son","Sit down as one at the board.","Different tongues, they embrace as one,","Thankful prayer becomes a song.","The Lord's grace falls on all,","Family and friends are blessed.","Counting mercies, hearts at rest,","Thanksgiving crowns it all."]
 };
 var SPEECH_LANG = {cmn: 'zh-CN', yue: 'zh-HK', en: 'en-US'};
 var playing = null; // {kind, audio}
