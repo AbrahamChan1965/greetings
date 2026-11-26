@@ -1,308 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>1621 普利茅斯的秋光與感恩 · Autumn Light &amp; Gratitude Since 1621</title>
-<meta name="description" content="1621 普利茅斯的秋光與感恩——各樣美善的恩賜和各樣全備的賞賜都是從上頭來的。雅各書 1:17。陳曉東牧師敬賀。" />
-<link rel="canonical" href="https://greetings.wordnspirit.com/thanksgiving/" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="1621 普利茅斯的秋光與感恩 · 感恩節快樂" />
-<meta property="og:description" content="各樣美善的恩賜和各樣全備的賞賜都是從上頭來的。—— 雅各書 1:17" />
-<meta property="og:url" content="https://greetings.wordnspirit.com/thanksgiving/" />
-<meta property="og:image" content="https://greetings.wordnspirit.com/thanksgiving/og-image.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="1621 普利茅斯的秋光與感恩 · 感恩節快樂" />
-<meta name="twitter:description" content="各樣美善的恩賜和各樣全備的賞賜都是從上頭來的。—— 雅各書 1:17" />
-<meta name="twitter:image" content="https://greetings.wordnspirit.com/thanksgiving/og-image.jpg" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet" />
+<meta name="description" content="一張感恩節卡片：1621 年普利茅斯的秋光，清教徒與萬帕諾亞格人圍桌謝恩。雅各書 1:17——各樣美善的恩賜，都是從上頭來的。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="1621 普利茅斯的秋光與感恩 · Autumn Light &amp; Gratitude Since 1621">
+<meta property="og:description" content="各樣美善的恩賜和各樣全備的賞賜，都是從上頭來的。——雅各書 1:17">
+<meta property="og:image" content="https://greetings.wordnspirit.com/thanksgiving/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="1621 年普利茅斯：清教徒與萬帕諾亞格人圍桌禱告">
+<meta property="og:url" content="https://greetings.wordnspirit.com/thanksgiving/">
+<link rel="canonical" href="https://greetings.wordnspirit.com/thanksgiving/">
 <style>
-  :root{
-    --ink:#2e2118; --paper:#faf6ee; --gold:#b98a2f; --gold-light:#d9a441;
-    --cream-line:rgba(185,138,47,.45);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:"Noto Serif TC","Noto Serif CJK TC","Songti TC",serif;
-    background:#1d150e; color:var(--ink);
-    -webkit-font-smoothing:antialiased;
-  }
-  a{color:inherit}
-  /* ---------- top bar ---------- */
-  .topbar{
-    position:absolute; top:0; left:0; right:0; z-index:20;
-    display:flex; justify-content:space-between; align-items:center;
-    padding:14px 20px;
-    background:linear-gradient(to bottom, rgba(20,12,6,.55), rgba(20,12,6,0));
-  }
-  .topbar a.home{
-    color:#f6ead2; text-decoration:none; font-size:15px; letter-spacing:.08em;
-    font-family:"Noto Sans TC",sans-serif; text-shadow:0 1px 8px rgba(0,0,0,.6);
-  }
-  .topbar span.tag{
-    color:#ecd9a8; font-size:12px; letter-spacing:.22em;
-    font-family:"Cormorant Garamond",Georgia,serif; text-transform:uppercase;
-    text-shadow:0 1px 8px rgba(0,0,0,.6);
-  }
-  /* ---------- hero: the painting ---------- */
-  .hero{
-    position:relative; min-height:100svh; overflow:hidden;
-    background:#1d150e url("plymouth-1621.jpg") center 30%/cover no-repeat;
-    display:flex; flex-direction:column; justify-content:flex-end;
-  }
-  .hero::after{
-    content:""; position:absolute; inset:0; z-index:1;
-    background:linear-gradient(to bottom, rgba(20,12,6,.42) 0%, rgba(20,12,6,0) 30%, rgba(20,12,6,0) 55%, rgba(20,12,6,.55) 100%);
-    pointer-events:none;
-  }
-  /* falling golden line illustrations — manna from above */
-  .fall-layer{position:absolute; inset:0; z-index:2; overflow:hidden; pointer-events:none}
-  .fall{position:absolute; top:-14vh; opacity:0; animation:fall linear infinite; will-change:transform,opacity}
-  .fall svg{display:block; width:100%; height:auto; filter:drop-shadow(0 0 6px rgba(217,164,65,.55))}
-  .fall .chip{
-    font-family:"Cormorant Garamond",Georgia,serif; font-style:italic;
-    color:#f2d488; text-shadow:0 0 10px rgba(217,164,65,.7), 0 1px 4px rgba(0,0,0,.5);
-    white-space:nowrap; letter-spacing:.04em;
-  }
-  .fall .chip.zh{font-family:"Noto Serif TC",serif; font-style:normal; letter-spacing:.14em}
-  @keyframes fall{
-    0%{transform:translateY(-12vh) rotate(-6deg); opacity:0}
-    8%{opacity:.95}
-    82%{opacity:.9}
-    100%{transform:translateY(108vh) rotate(7deg); opacity:0}
-  }
-  @keyframes sway{0%,100%{margin-left:-14px}50%{margin-left:14px}}
-  .fall{animation-name:fall,sway; animation-timing-function:linear,ease-in-out; animation-iteration-count:infinite,infinite}
-  /* hero verse */
-  .hero-verse{
-    position:relative; z-index:3; text-align:center; color:#fbf3df;
-    padding:92px 20px 26px; text-shadow:0 2px 14px rgba(0,0,0,.65);
-  }
-  .hero-verse .eyebrow{
-    font-family:"Cormorant Garamond",Georgia,serif; letter-spacing:.34em;
-    font-size:13px; color:#ecd9a8; text-transform:uppercase;
-  }
-  .hero-verse .dual{font-size:13px; letter-spacing:.3em; color:#e8d9b0; margin-top:8px; font-family:"Noto Sans TC",sans-serif}
-  .hero-verse blockquote{margin-top:18px; font-size:clamp(18px,4.6vw,27px); line-height:1.75; font-weight:600}
-  .hero-verse blockquote .en{
-    display:block; margin-top:10px;
-    font-family:"Cormorant Garamond",Georgia,serif; font-style:italic; font-weight:500;
-    font-size:.82em; line-height:1.6; color:#f3e7c8;
-  }
-  .scroll-hint{
-    position:relative; z-index:3; text-align:center; color:#e8d9b0;
-    font-size:12px; letter-spacing:.3em; padding-bottom:22px;
-    font-family:"Noto Sans TC",sans-serif; opacity:.85;
-  }
-  /* ---------- paper: the letter ---------- */
-  .paper{
-    background:var(--paper);
-    background-image:radial-gradient(ellipse at 50% 0%, rgba(185,138,47,.08), transparent 60%);
-    padding:56px 20px 64px; text-align:center;
-  }
-  .paper-inner{max-width:640px; margin:0 auto}
-  .paper h1{font-size:clamp(26px,6.4vw,38px); line-height:1.45; font-weight:700; letter-spacing:.02em}
-  .paper h1 .en{
-    display:block; margin-top:10px;
-    font-family:"Cormorant Garamond",Georgia,serif; font-weight:600;
-    font-size:.78em; letter-spacing:.02em; color:#6b4d1f;
-  }
-  .rule{width:64px; height:2px; background:var(--gold); margin:26px auto; opacity:.8}
-  .paper p{font-size:17px; line-height:2.05; text-align:justify; margin:0 0 18px}
-  .paper p.en{
-    font-family:"Cormorant Garamond",Georgia,serif; font-size:19px; line-height:1.75;
-    color:#4d3a28; text-align:left;
-  }
-  .note{
-    margin-top:34px; padding:20px 22px; text-align:left;
-    border:1px solid var(--cream-line); border-radius:6px; background:rgba(185,138,47,.06);
-  }
-  .note h2{font-size:14px; letter-spacing:.2em; color:#8a6420; margin-bottom:10px; font-family:"Noto Sans TC",sans-serif}
-  .note p{font-size:14.5px; line-height:1.9; margin:0 0 8px; text-align:left}
-  .note p.en{font-family:"Cormorant Garamond",Georgia,serif; font-size:16.5px; line-height:1.65; color:#4d3a28}
-  .sign{margin-top:38px; font-size:19px; font-weight:600; letter-spacing:.06em}
-  .sign .en{display:block; margin-top:6px; font-family:"Cormorant Garamond",Georgia,serif; font-size:17px; font-weight:500; color:#6b4d1f; letter-spacing:.03em}
-  .copy-wrap{margin-top:30px}
-  button.copy{
-    font-family:"Noto Sans TC",sans-serif; font-size:15px; letter-spacing:.12em;
-    color:#fff; background:linear-gradient(135deg,#a5762a,#c49a3f);
-    border:none; border-radius:999px; padding:13px 30px; cursor:pointer;
-    box-shadow:0 6px 18px rgba(120,85,20,.35);
-  }
-  button.copy:active{transform:scale(.97)}
-  .copy-note{margin-top:12px; font-size:12.5px; color:#8a7a5f; font-family:"Noto Sans TC",sans-serif; letter-spacing:.08em}
-  footer{
-    background:#1d150e; color:#cbb98e; text-align:center;
-    padding:26px 16px 30px; font-size:13px; letter-spacing:.18em;
-    font-family:"Cormorant Garamond",Georgia,serif;
-  }
-  footer a{color:#ecd9a8; text-decoration:none; border-bottom:1px solid rgba(236,217,168,.5)}
-  footer .zh{display:block; margin-top:6px; font-family:"Noto Sans TC",sans-serif; font-size:12px; letter-spacing:.28em; color:#a68f66}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f7f1e5;color:#3d2f1d;font-family:"Noto Serif CJK TC","Songti TC",Georgia,serif;line-height:1.75}
+  body[data-lang="zh"] .en{display:none}
+  body[data-lang="en"] .zh{display:none}
+  a{color:#8a6d2f}
+  .topbar{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;color:#fdf8ec;text-shadow:0 1px 6px rgba(0,0,0,.55)}
+  .topbar a{color:#fdf8ec;text-decoration:none;font-weight:700;letter-spacing:.06em}
+  .topbar-right{display:flex;align-items:center;gap:14px}
+  .tag{font-size:12px;letter-spacing:.22em;opacity:.9}
+  .lang-toggle{display:flex;gap:6px}
+  .lang-toggle button{font-family:inherit;font-size:13px;letter-spacing:.08em;padding:5px 12px;border-radius:999px;border:1px solid rgba(253,248,236,.75);background:rgba(20,14,6,.28);color:#fdf8ec;cursor:pointer}
+  .lang-toggle button.on{background:#e8c878;border-color:#e8c878;color:#2b2118;font-weight:700}
+  .hero{position:relative;min-height:100svh;overflow:hidden;background:#2b2118}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,14,6,.34) 0%,rgba(20,14,6,0) 26%,rgba(20,14,6,0) 58%,rgba(20,14,6,.62) 100%)}
+  .fall-layer{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:2}
+  .fall{position:absolute;top:-14%;animation-name:fall,sway;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite}
+  .fall svg{display:block; width:100%; height:auto; filter:drop-shadow(0 0 10px rgba(217,164,65,.8))}
+  .fall svg g{stroke-width:2.5}
+  .fall .chip{display:inline-block;white-space:nowrap;font-size:14px;letter-spacing:.14em;color:#f6dfa0;background:rgba(43,33,24,.42);border:1px solid rgba(232,200,120,.55);border-radius:999px;padding:5px 12px;text-shadow:0 1px 4px rgba(0,0,0,.5)}
+  .fall .chip.zh{font-size:15px;letter-spacing:.2em}
+  @keyframes fall{0%{transform:translateY(-12vh);opacity:0}12%{opacity:.92}82%{opacity:.92}100%{transform:translateY(112vh);opacity:0}}
+  @keyframes sway{0%,100%{margin-left:0}50%{margin-left:16px}}
+  .hero-text{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:26px 22px 34px;text-align:center;color:#fdf8ec;text-shadow:0 2px 10px rgba(0,0,0,.65)}
+  .eyebrow{font-size:12px;letter-spacing:.34em;opacity:.92;margin-bottom:10px}
+  .verse{font-size:clamp(22px,4.4vw,38px);line-height:1.5;margin:0;font-weight:600}
+  .verse small{display:block;font-size:.62em;letter-spacing:.1em;opacity:.9;margin-top:6px}
+  .paper{max-width:680px;margin:0 auto;padding:44px 22px 30px}
+  h1{font-size:clamp(26px,5vw,36px);line-height:1.4;text-align:center;margin:0 0 6px;color:#5b3f1a}
+  .sub{text-align:center;color:#8a6d2f;letter-spacing:.12em;font-size:14px;margin:0 0 28px}
+  .paper p{margin:0 0 18px;font-size:17px}
+  .note{border-left:3px solid #c9a24b;background:#f3e9d2;padding:14px 16px;font-size:14.5px;color:#6b5636;margin:26px 0}
+  .note b{color:#5b3f1a}
+  h2{font-size:21px;color:#5b3f1a;margin:34px 0 14px;text-align:center}
+  .figs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .figcard{background:#fffdf6;border:1px solid #e3d3ae;border-radius:12px;padding:16px 14px;text-align:center}
+  .figcard img{width:112px;height:auto;border-radius:8px;border:1px solid #d8c08a;display:block;margin:0 auto 10px}
+  .figcard .name{font-weight:700;font-size:16.5px;color:#5b3f1a;line-height:1.5;margin:0 0 2px}
+  .figcard .role{font-size:13px;color:#8a6d2f;letter-spacing:.08em;margin:0 0 10px}
+  .figcard p{font-size:14.5px;line-height:1.7;text-align:left;margin:0}
+  .footnote{font-size:13px;color:#8a7a5c;text-align:center;margin:14px 0 0;line-height:1.6}
+  .poem{background:#fffdf6;border:1px solid #e3d3ae;border-radius:12px;padding:22px 20px 18px;text-align:center}
+  .poem .lines{font-size:17.5px;line-height:2.05;color:#4a3a22;margin:0 0 16px}
+  .listen{display:inline-block;font-family:inherit;font-size:15.5px;letter-spacing:.06em;padding:10px 22px;border-radius:999px;border:1px solid #c9a24b;background:#c9a24b;color:#2b2118;cursor:pointer}
+  .listen.speaking{background:#8a6d2f;border-color:#8a6d2f;color:#fdf8ec}
+  .poem .hint{font-size:13px;color:#8a7a5c;margin:10px 0 0}
+  .sig{margin:34px 0 6px;font-size:18px;color:#5b3f1a;text-align:center}
+  .copyrow{text-align:center;margin:22px 0 6px}
+  .copybtn{display:inline-block;font-family:inherit;font-size:16px;padding:11px 24px;border-radius:999px;border:1px solid #8a6d2f;background:#fffdf6;color:#6b4d16;cursor:pointer}
+  .copybtn.done{background:#e8c878;border-color:#c9a24b;color:#2b2118}
+  footer{border-top:1px solid #e3d3ae;margin-top:34px;padding:20px 0 26px;text-align:center;font-size:14px;color:#8a7a5c;line-height:2}
+  footer a{color:#8a6d2f}
   @media (max-width:520px){
-    .paper p{font-size:16px}
-    .hero{min-height:92svh}
-    .topbar span.tag{display:none}
-    .topbar{padding:12px 16px}
+    .topbar{padding:12px 14px}
+    .tag{display:none}
+    .lang-toggle button{font-size:12px;padding:4px 10px}
+    .hero img.bg{object-position:center 28%}
+    .verse{font-size:22px}
+    .paper{padding:34px 18px 22px}
+    .paper p{font-size:16.5px}
+    .figs{grid-template-columns:1fr}
+    .figcard img{width:96px}
+    .fall .chip{font-size:12.5px}
+    .fall .chip.zh{font-size:13.5px}
   }
 </style>
 </head>
-<body>
+<body data-lang="zh">
 
-<!-- golden line-art symbols for the falling layer -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
+<header class="topbar">
+  <a href="https://gls.wordnspirit.com/">← <span class="zh">基督燈臺事工</span><span class="en">Golden Lampstand Ministry</span></a>
+  <div class="topbar-right">
+    <span class="tag">WORD &amp; SPIRIT · NEW ENGLAND</span>
+    <div class="lang-toggle" role="group" aria-label="Language / 語言">
+      <button type="button" id="btn-zh" class="on" onclick="setLang('zh')">中文</button>
+      <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <img class="bg" src="plymouth-1621.jpg" alt="1621 年普利茅斯：清教徒與萬帕諾亞格人圍著長桌，低頭禱告謝恩">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
     <symbol id="ic-corn" viewBox="0 0 64 64">
       <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M32 8 C24 14 22 26 24 38 C26 48 30 54 32 56 C34 54 38 48 40 38 C42 26 40 14 32 8 Z"/>
-        <path d="M28 18 L36 18 M27 26 L37 26 M28 34 L36 34 M29 42 L35 42"/>
-        <path d="M24 40 C16 44 12 52 12 58 C20 56 25 50 27 44"/>
-        <path d="M40 40 C48 44 52 52 52 58 C44 56 39 50 37 44"/>
+        <path d="M32 8 C24 14 20 24 22 34 C24 44 28 52 32 58 C36 52 40 44 42 34 C44 24 40 14 32 8 Z"/>
+        <path d="M32 14 L32 54 M26 22 C28 26 28 30 26 34 M38 22 C36 26 36 30 38 34 M27 40 C29 43 29 46 27 49 M37 40 C35 43 35 46 37 49"/>
+        <path d="M32 58 L28 62 M32 58 L36 62"/>
       </g>
     </symbol>
     <symbol id="ic-pumpkin" viewBox="0 0 64 64">
-      <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round">
-        <path d="M32 22 C20 22 12 30 12 40 C12 50 20 56 32 56 C44 56 52 50 52 40 C52 30 44 22 32 22 Z"/>
-        <path d="M32 22 C26 28 24 46 26 56 M32 22 C32 30 32 46 32 56 M32 22 C38 28 40 46 38 56"/>
-        <path d="M32 22 C32 16 34 12 38 10"/>
+      <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32 18 C22 18 14 26 14 36 C14 48 22 56 32 56 C42 56 50 48 50 36 C50 26 42 18 32 18 Z"/>
+        <path d="M32 18 C32 12 34 8 38 6 M24 20 C22 30 22 44 26 54 M40 20 C42 30 42 44 38 54"/>
       </g>
     </symbol>
-    <symbol id="ic-fowl" viewBox="0 0 64 64">
+    <symbol id="ic-venison" viewBox="0 0 64 64">
       <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M10 40 C14 30 24 24 34 26 C44 28 52 34 54 42 C50 48 40 50 32 48 C22 46 12 46 10 40 Z"/>
-        <path d="M46 30 C48 24 46 18 42 16"/>
-        <path d="M42 16 C40 13 36 13 35 16"/>
-        <circle cx="38" cy="19" r="1.4" fill="#e8c878" stroke="none"/>
-        <path d="M14 42 C20 44 28 44 34 42"/>
+        <path d="M32 20 C30 14 26 10 22 8 M32 20 C32 13 34 8 38 6 M32 20 C36 15 40 12 44 11"/>
+        <path d="M27 20 C25 24 25 28 27 30 L37 30 C39 28 39 24 37 20 C35 18 29 18 27 20 Z"/>
+        <path d="M28 30 C24 34 22 40 24 46 L40 46 C42 40 40 34 36 30"/>
+        <path d="M26 46 L24 58 M31 46 L31 58 M36 46 L38 58 M41 46 L43 58"/>
       </g>
     </symbol>
     <symbol id="ic-fish" viewBox="0 0 64 64">
       <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M8 32 C16 22 28 18 38 22 C46 25 50 28 52 32 C50 36 46 39 38 42 C28 46 16 42 8 32 Z"/>
-        <path d="M52 32 L60 24 L60 40 Z"/>
+        <path d="M8 32 C18 20 34 18 46 28 L56 22 L54 32 L56 42 L46 36 C34 46 18 44 8 32 Z"/>
         <circle cx="20" cy="30" r="1.6" fill="#e8c878" stroke="none"/>
         <path d="M30 24 C32 28 32 36 30 40"/>
       </g>
     </symbol>
-    <symbol id="ic-wheat" viewBox="0 0 64 64">
-      <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M32 58 L32 14"/>
-        <path d="M32 20 C26 16 24 10 26 6 C30 10 32 14 32 20 Z"/>
-        <path d="M32 20 C38 16 40 10 38 6 C34 10 32 14 32 20 Z"/>
-        <path d="M32 32 C26 28 24 22 26 18 C30 22 32 26 32 32 Z"/>
-        <path d="M32 32 C38 28 40 22 38 18 C34 22 32 26 32 32 Z"/>
-        <path d="M32 44 C26 40 24 34 26 30 C30 34 32 38 32 44 Z"/>
-        <path d="M32 44 C38 40 40 34 38 30 C34 34 32 38 32 44 Z"/>
-        <path d="M32 52 C24 54 18 52 14 48 C20 46 28 48 32 52 Z"/>
+    <symbol id="ic-shell" viewBox="0 0 64 64">
+      <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round">
+        <path d="M12 34 C12 22 20 12 32 12 C44 12 52 22 52 34 C52 40 46 44 38 46 L26 46 C18 44 12 40 12 34 Z"/>
+        <path d="M32 12 L32 46 M22 15 L26 46 M42 15 L38 46 M14 24 L24 45 M50 24 L40 45"/>
+        <path d="M26 46 L24 52 L40 52 L38 46"/>
       </g>
     </symbol>
     <symbol id="ic-berries" viewBox="0 0 64 64">
-      <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round">
-        <path d="M32 12 C32 8 34 6 38 6"/>
-        <circle cx="26" cy="22" r="6"/><circle cx="38" cy="22" r="6"/>
-        <circle cx="20" cy="34" r="6"/><circle cx="32" cy="34" r="6"/><circle cx="44" cy="34" r="6"/>
-        <circle cx="26" cy="46" r="6"/><circle cx="38" cy="46" r="6"/>
-        <circle cx="32" cy="56" r="5"/>
+      <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32 12 C32 8 34 5 38 4"/>
+        <circle cx="22" cy="26" r="7"/>
+        <circle cx="40" cy="24" r="7"/>
+        <circle cx="30" cy="42" r="7"/>
+        <circle cx="46" cy="42" r="7"/>
+        <path d="M28 20 L34 22 M36 30 L34 36 M38 46 L40 44"/>
       </g>
     </symbol>
-  </defs>
-</svg>
-
-<header class="hero">
-  <div class="topbar">
-    <a class="home" href="https://gls.wordnspirit.com/">← 基督燈臺事工</a>
-    <span class="tag">Word &amp; Spirit · New England</span>
-  </div>
-
+  </defs></svg>
   <div class="fall-layer" aria-hidden="true">
-    <span class="fall" style="left:6%;  width:52px; animation-duration:30s,7s; animation-delay:0s,0s"><svg><use href="#ic-corn"/></svg></span>
-    <span class="fall" style="left:16%; width:40px; animation-duration:36s,8s; animation-delay:6s,1s"><svg><use href="#ic-berries"/></svg></span>
-    <span class="fall" style="left:24%; width:64px; animation-duration:27s,6s; animation-delay:3s,0s"><svg><use href="#ic-pumpkin"/></svg></span>
-    <span class="fall" style="left:33%; width:46px; animation-duration:33s,9s; animation-delay:11s,2s"><svg><use href="#ic-wheat"/></svg></span>
-    <span class="fall" style="left:42%; width:58px; animation-duration:29s,7s; animation-delay:1s,1s"><svg><use href="#ic-fowl"/></svg></span>
-    <span class="fall" style="left:52%; width:44px; animation-duration:38s,8s; animation-delay:8s,0s"><svg><use href="#ic-fish"/></svg></span>
-    <span class="fall" style="left:61%; width:56px; animation-duration:26s,6s; animation-delay:4s,2s"><svg><use href="#ic-corn"/></svg></span>
-    <span class="fall" style="left:70%; width:38px; animation-duration:34s,9s; animation-delay:13s,1s"><svg><use href="#ic-berries"/></svg></span>
-    <span class="fall" style="left:78%; width:62px; animation-duration:31s,7s; animation-delay:2s,0s"><svg><use href="#ic-pumpkin"/></svg></span>
-    <span class="fall" style="left:87%; width:48px; animation-duration:28s,8s; animation-delay:9s,2s"><svg><use href="#ic-wheat"/></svg></span>
-    <span class="fall" style="left:20%; animation-duration:40s,9s; animation-delay:5s,0s"><span class="chip">Every good gift is from above</span></span>
-    <span class="fall" style="left:58%; animation-duration:44s,10s; animation-delay:15s,1s"><span class="chip zh">各樣美善的恩賜</span></span>
+    <span class="fall" style="left:4%;  width:72px; animation-duration:30s,7s; animation-delay:0s,0s"><svg><use href="#ic-corn"/></svg></span>
+    <span class="fall" style="left:13%; width:84px; animation-duration:27s,6s; animation-delay:4s,1s"><svg><use href="#ic-pumpkin"/></svg></span>
+    <span class="fall" style="left:22%; width:76px; animation-duration:32s,8s; animation-delay:2s,0s"><svg><use href="#ic-venison"/></svg></span>
+    <span class="fall" style="left:31%; width:68px; animation-duration:29s,7s; animation-delay:8s,2s"><svg><use href="#ic-fish"/></svg></span>
+    <span class="fall" style="left:40%; width:64px; animation-duration:35s,9s; animation-delay:1s,1s"><svg><use href="#ic-shell"/></svg></span>
+    <span class="fall" style="left:49%; width:60px; animation-duration:31s,8s; animation-delay:6s,0s"><svg><use href="#ic-berries"/></svg></span>
+    <span class="fall" style="left:58%; width:66px; animation-duration:28s,6s; animation-delay:3s,2s"><svg><use href="#ic-corn"/></svg></span>
+    <span class="fall" style="left:67%; width:78px; animation-duration:33s,7s; animation-delay:10s,1s"><svg><use href="#ic-pumpkin"/></svg></span>
+    <span class="fall" style="left:76%; width:72px; animation-duration:30s,9s; animation-delay:5s,0s"><svg><use href="#ic-venison"/></svg></span>
+    <span class="fall" style="left:84%; width:62px; animation-duration:26s,8s; animation-delay:2s,2s"><svg><use href="#ic-fish"/></svg></span>
+    <span class="fall" style="left:90%; width:58px; animation-duration:34s,7s; animation-delay:9s,1s"><svg><use href="#ic-shell"/></svg></span>
+    <span class="fall" style="left:8%;  width:56px; animation-duration:36s,9s; animation-delay:12s,0s"><svg><use href="#ic-berries"/></svg></span>
+    <span class="fall" style="left:18%; animation-duration:40s,9s; animation-delay:5s,0s"><span class="chip en">Every good gift is from above</span></span>
+    <span class="fall" style="left:56%; animation-duration:44s,10s; animation-delay:15s,1s"><span class="chip zh">各樣美善的恩賜</span></span>
   </div>
-
-  <div class="hero-verse">
-    <div class="eyebrow">Plymouth · Autumn 1621</div>
-    <div class="dual">雙語 / Dual　中文 English</div>
-    <blockquote>
-      「各樣美善的恩賜和各樣全備的賞賜都是從上頭來的。」—— 雅各書 1:17
-      <span class="en">"Every good gift and every perfect gift is from above." — James 1:17</span>
-    </blockquote>
+  <div class="hero-text">
+    <div class="eyebrow">PLYMOUTH · AUTUMN 1621</div>
+    <p class="verse"><span class="zh">「各樣美善的恩賜和各樣全備的賞賜，都是從上頭來的。」</span><span class="en">“Every good gift and every perfect gift is from above.”</span><small><span class="zh">雅各書 1:17</span><span class="en">James 1:17</span></small></p>
   </div>
-  <div class="scroll-hint">⌄　向下捲動　Scroll</div>
-</header>
+</section>
 
 <main class="paper">
-  <div class="paper-inner">
-    <h1>1621 普利茅斯的秋光與感恩
-      <span class="en">Autumn Light &amp; Gratitude Since 1621</span>
-    </h1>
-    <div class="rule"></div>
-    <p>在這個充滿即時訊息與數位喧囂的時代，我想為你留下一片安靜的秋日長桌。四百多年前的秋天，經歷嚴冬與試煉的人們在普利茅斯海灣旁圍坐，為著玉米、野禽、清水與彼此的存留獻上感謝。</p>
-    <p class="en">Amid the rush of constant notifications and digital noise, I wanted to set aside a quiet autumn table for you. Over four centuries ago along Plymouth Bay, those who had weathered a harsh winter gathered around simple harvest fare to give thanks for corn, wildfowl, clean water, and the gift of life shared together.</p>
-    <p>願那些從上頭緩緩降下的恩典，在繁忙歲月中重新安頓你的心靈；願你在家人、朋友與呼召之中，看見真實而長存的豐盛。</p>
-    <p class="en">May the quiet mercies descending from above restore stillness to your soul, and may you behold lasting abundance among family, friends, and your calling this Thanksgiving.</p>
+  <h1><span class="zh">1621 普利茅斯的秋光與感恩</span><span class="en">Autumn Light &amp; Gratitude Since 1621</span></h1>
+  <p class="sub"><span class="zh">一張安靜的卡片，送給你</span><span class="en">A quiet card, for you</span></p>
 
-    <div class="note">
-      <h2>歷史考據註記 · Historical Note</h2>
-      <p>1621 年秋收慶典記載於 Edward Winslow《Mourt's Relation》與 William Bradford《Of Plymouth Plantation》，當年的主要收穫包含印第安玉米（Indian Corn）、南瓜（Pumpkins）、野火雞與水禽（Wildfowl）、鱈魚與鱸魚（Cod &amp; Bass）。</p>
-      <p class="en">Documented in Edward Winslow's Mourt's Relation and William Bradford's Of Plymouth Plantation, the 1621 Plymouth harvest centered on Indian corn, pumpkins, wildfowl, cod, and bass—shared across three days of gratitude.</p>
+  <p><span class="zh">在一個安靜的秋日，一張長桌擺在普利茅斯的海灣邊。清教徒與萬帕諾亞格人圍坐在一起，為著剛剛收穫的玉米、南瓜與野禽，低頭謝恩。桌上的食物不多，卻足夠讓一群歷經嚴冬、幾乎失去一切的人，重新學會一件事：恩典不是理所當然的。</span><span class="en">On a quiet autumn day, a long table stood by the bay at Plymouth. Pilgrims and Wampanoag sat together around it, bowing their heads in thanks for the corn, the pumpkins, and the wild fowl they had just harvested. The food was not plentiful, yet it was enough to teach a people who had survived a terrible winter, and lost nearly everything, one thing again: grace is never to be taken for granted.</span></p>
+
+  <p><span class="zh">這張卡片所記念的，正是那一刻——恩典從上頭來。雅各書說：「各樣美善的恩賜和各樣全備的賞賜都是從上頭來的。」就像嗎哪一樣，食物、友誼與平安，都不是我們掙來的，而是從天上緩緩降下的禮物。</span><span class="en">This card remembers that moment — the moment grace came down from above. As James writes, “Every good gift and every perfect gift is from above.” Like manna, food, friendship, and peace are not things we earn; they are gifts that descend gently from heaven.</span></p>
+
+  <div class="note">
+    <p style="margin:0"><span class="zh"><b>歷史註記：</b>1621 年秋天，普利茅斯殖民地與萬帕諾亞格人共進秋收筵席。愛德華·溫斯洛（Edward Winslow）在《莫特關係》（Mourt's Relation，1622）中記述了這場宴會；威廉·布拉德福德（William Bradford）在《普利茅斯種植園史》（Of Plymouth Plantation）中留下了殖民地早期的完整記載。文獻提到的食物包括鹿肉、野禽、印第安玉米、南瓜、豆類、魚、莓果與堅果。火雞是後來的傳統象徵，並非文獻的中心。</span><span class="en"><b>A note on the history:</b> in the autumn of 1621, the Plymouth colonists shared a harvest feast with the Wampanoag. Edward Winslow described the feast in Mourt's Relation (1622); William Bradford preserved the colony's early history in Of Plymouth Plantation. The foods named in the records include venison, wild fowl, Indian corn, pumpkins, beans, fish, berries, and nuts. The turkey is a later traditional symbol, not the centre of the record.</span></p>
+  </div>
+
+  <h2><span class="zh">桌邊的人物</span><span class="en">The People at the Table</span></h2>
+  <div class="figs">
+    <div class="figcard">
+      <img src="figures/brewster.png" alt="布魯斯特長老想像像" loading="lazy">
+      <p class="name"><span class="zh">布魯斯特長老</span><span class="en">Elder William Brewster</span></p>
+      <p class="role"><span class="zh">約 1566–1644 · 治理長老</span><span class="en">c. 1566–1644 · Ruling Elder</span></p>
+      <p><span class="zh">清教徒的治理長老與屬靈父親，在第一個冬天為垂死者禱告。據傳統，他在 1621 年秋收筵席上領眾謝恩——正是畫中桌首低頭禱告的那一位。</span><span class="en">The Pilgrims' ruling elder and spiritual father, who prayed with the dying through the first winter. Tradition holds that he led the prayer of thanks at the 1621 harvest feast — the bowed head at the centre of the painting.</span></p>
     </div>
-
-    <div class="sign">陳曉東 敬賀
-      <span class="en">Rev. Dr. Abraham Chan</span>
-    </div>
-
-    <div class="copy-wrap">
-      <button class="copy" id="copyBtn" type="button">複製分享連結 / Copy Link</button>
-      <div class="copy-note" id="copyNote">把這張賀卡分享給你想祝福的人</div>
+    <div class="figcard">
+      <img src="figures/bradford.jpg" alt="威廉·布拉德福德想像像" loading="lazy">
+      <p class="name"><span class="zh">威廉·布拉德福德</span><span class="en">William Bradford</span></p>
+      <p class="role"><span class="zh">約 1590–1657 · 第二任總督</span><span class="en">c. 1590–1657 · Second Governor</span></p>
+      <p><span class="zh">普利茅斯殖民地總督三十年，《普利茅斯種植園史》（1630 年起筆）的作者——正是這部史書保存了清教徒的故事。1621 年秋收筵席上，他就是那位總督，五隻鹿正是獻給他的。</span><span class="en">Governor of Plymouth Colony for some thirty years, and author of Of Plymouth Plantation — the history, begun in 1630, that preserves the Pilgrims' story. He was the governor at the 1621 harvest feast, to whom the five deer were brought.</span></p>
     </div>
   </div>
+  <p class="footnote"><span class="zh">畫像皆為後人想像，並非寫生——布魯斯特與布拉德福德生前皆無畫像存世。</span><span class="en">Both likenesses are artists' imaginings, not portraits from life — no portrait of either man from life survives.</span></p>
+
+  <h2><span class="zh">感恩詩歌</span><span class="en">Thanksgiving Poems</span></h2>
+  <div class="poem">
+    <p class="lines zh">秋光灑在普利茅斯，<br>海灣靜靜聽禱聲。<br>玉米南瓜擺滿桌，<br>鹿肉魚鮮謝主恩。<br>嚴冬已過春又來，<br>存留性命非偶然。<br>各樣美善從上頭，<br>嗎哪降下似甘霖。<br>清教徒與原住民，<br>圍桌同坐一家親。<br>不同言語同一心，<br>感恩化作歌聲新。<br>願這恩典臨我家，<br>親人朋友同蒙福。<br>數算主恩心安息，<br>年年秋天唱感恩。</p>
+    <p class="lines en">Autumn light on Plymouth Bay,<br>The tide keeps time with prayer.<br>Corn and pumpkin fill the board,<br>Venison and fish are there.<br>The winter passed, the spring returned,<br>Our lives were not our own.<br>Every good gift from above,<br>Like manna gently sown.<br>The Pilgrim and the Native son<br>Sit down as one at the board.<br>Different tongues, one thankful heart,<br>Our gratitude to the Lord.<br>May this grace fall on my home,<br>On family, friend, and call.<br>Counting mercies, hearts at rest,<br>Thanksgiving crowns it all.</p>
+    <button type="button" class="listen" id="listenBtn" onclick="toggleListen()"><span class="zh">▶ 朗誦這首詩</span><span class="en">▶ Listen to this poem</span></button>
+    <p class="hint"><span class="zh">按一下即可聽到朗誦（使用您裝置的語音）</span><span class="en">Tap to hear it read aloud (using your device's voice)</span></p>
+  </div>
+
+  <p class="sig">陳曉東 敬賀 · Rev. Dr. Abraham Chan</p>
+
+  <div class="copyrow">
+    <button type="button" class="copybtn" id="copyBtn" onclick="copyLink()"><span class="zh">複製分享連結</span><span class="en">Copy sharing link</span></button>
+  </div>
+
+  <footer>
+    Word &amp; Spirit · New England<br>
+    <a href="https://devotions.wordnspirit.com/">中文靈修站</a> · <a href="https://devotions.wordnspirit.com/en/">English Devotions</a>
+  </footer>
 </main>
 
-<footer>
-  Word &amp; Spirit • New England
-  <span class="zh">聖言靈禱 · 基督燈臺事工</span>
-  <div style="margin-top:10px"><a href="https://devotions.wordnspirit.com/">中文靈修</a>　·　<a href="https://devotions.wordnspirit.com/en/">English Devotions</a></div>
-</footer>
-
 <script>
-(function(){
-  var btn=document.getElementById('copyBtn'), note=document.getElementById('copyNote');
-  var url=window.location.href;
-  function done(){
-    btn.textContent='已複製感恩節賀卡連結 / Link copied';
-    note.textContent='連結已複製，貼到 WhatsApp 或電郵就可以分享';
-    setTimeout(function(){
-      btn.textContent='複製分享連結 / Copy Link';
-      note.textContent='把這張賀卡分享給你想祝福的人';
-    },3000);
+var POEMS = {
+  zh: ["秋光灑在普利茅斯，","海灣靜靜聽禱聲。","玉米南瓜擺滿桌，","鹿肉魚鮮謝主恩。","嚴冬已過春又來，","存留性命非偶然。","各樣美善從上頭，","嗎哪降下似甘霖。","清教徒與原住民，","圍桌同坐一家親。","不同言語同一心，","感恩化作歌聲新。","願這恩典臨我家，","親人朋友同蒙福。","數算主恩心安息，","年年秋天唱感恩。"],
+  en: ["Autumn light on Plymouth Bay,","The tide keeps time with prayer.","Corn and pumpkin fill the board,","Venison and fish are there.","The winter passed, the spring returned,","Our lives were not our own.","Every good gift from above,","Like manna gently sown.","The Pilgrim and the Native son","Sit down as one at the board.","Different tongues, one thankful heart,","Our gratitude to the Lord.","May this grace fall on my home,","On family, friend, and call.","Counting mercies, hearts at rest,","Thanksgiving crowns it all."]
+};
+var speaking = false;
+function lang(){ return document.body.getAttribute('data-lang') || 'zh'; }
+function setLang(l){
+  stopListen();
+  document.body.setAttribute('data-lang', l);
+  document.getElementById('btn-zh').classList.toggle('on', l === 'zh');
+  document.getElementById('btn-en').classList.toggle('on', l === 'en');
+  try{ localStorage.setItem('thanks-lang', l); }catch(e){}
+}
+function listenLabel(){
+  var b = document.getElementById('listenBtn');
+  if(speaking){
+    b.innerHTML = lang() === 'zh' ? '■ 停止朗誦' : '■ Stop';
+  }else{
+    b.innerHTML = lang() === 'zh' ? '<span class="zh">▶ 朗誦這首詩</span><span class="en">▶ Listen to this poem</span>' : '<span class="zh">▶ 朗誦這首詩</span><span class="en">▶ Listen to this poem</span>';
   }
-  btn.addEventListener('click',function(){
-    if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(done, function(){fallback();});
-    } else { fallback(); }
-    function fallback(){
-      var ta=document.createElement('textarea');
-      ta.value=url; ta.style.position='fixed'; ta.style.opacity='0';
-      document.body.appendChild(ta); ta.select();
-      try{ document.execCommand('copy'); done(); }catch(e){}
-      document.body.removeChild(ta);
-    }
-  });
-})();
+  b.classList.toggle('speaking', speaking);
+}
+function stopListen(){
+  if('speechSynthesis' in window){ window.speechSynthesis.cancel(); }
+  if(speaking){ speaking = false; listenLabel(); }
+}
+function toggleListen(){
+  if(!('speechSynthesis' in window)){ return; }
+  if(speaking){ stopListen(); return; }
+  var l = lang();
+  var u = new SpeechSynthesisUtterance(POEMS[l].join('\n'));
+  u.lang = l === 'zh' ? 'zh-CN' : 'en-US';
+  u.rate = 0.92;
+  var vs = window.speechSynthesis.getVoices();
+  for(var i = 0; i < vs.length; i++){
+    if(l === 'zh' && vs[i].lang && vs[i].lang.indexOf('zh') === 0){ u.voice = vs[i]; break; }
+    if(l === 'en' && vs[i].lang === 'en-US'){ u.voice = vs[i]; break; }
+  }
+  u.onend = function(){ speaking = false; listenLabel(); };
+  u.onerror = function(){ speaking = false; listenLabel(); };
+  speaking = true; listenLabel();
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+if('speechSynthesis' in window){ window.speechSynthesis.onvoiceschanged = function(){}; }
+function copyLink(){
+  var url = 'https://greetings.wordnspirit.com/thanksgiving/';
+  var btn = document.getElementById('copyBtn');
+  var done = function(){
+    btn.classList.add('done');
+    btn.innerHTML = lang() === 'zh' ? '已複製連結 ✓' : 'Link copied ✓';
+    setTimeout(function(){
+      btn.classList.remove('done');
+      btn.innerHTML = '<span class="zh">複製分享連結</span><span class="en">Copy sharing link</span>';
+    }, 2200);
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(done, function(){ fallbackCopy(url); done(); });
+  }else{ fallbackCopy(url); done(); }
+}
+function fallbackCopy(text){
+  var ta = document.createElement('textarea');
+  ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); }catch(e){}
+  document.body.removeChild(ta);
+}
+try{
+  var saved = localStorage.getItem('thanks-lang');
+  if(saved === 'en' || saved === 'zh'){ setLang(saved); }
+}catch(e){}
 </script>
 </body>
 </html>
