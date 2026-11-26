@@ -216,6 +216,7 @@ function setLang(l){
   setBtn('song', 'idle');
   try{ localStorage.setItem('thanks-lang', l); }catch(e){}
   tryAutoplay();
+  ensureSongPreloaded();
 }
 function btnFor(kind){ return document.getElementById(kind === 'narration' ? 'narrateBtn' : 'poemBtn'); }
 function labelFor(kind, state){
@@ -263,8 +264,26 @@ function audioUrl(kind, l){
   if(kind === 'song') return AUDIO_BASE + songFile(l);
   return AUDIO_BASE + kind + '-' + l + '.mp3';
 }
+var preSong = null; // {url, audio} - song preloaded so the first tap plays instantly
+function ensureSongPreloaded(){
+  var url = audioUrl('song', lang());
+  if(preSong && preSong.url === url) return;
+  fileExists(url).then(function(ok){
+    if(!ok) return;
+    var a = new Audio(url);
+    a.preload = 'auto';
+    a.load();
+    preSong = {url: url, audio: a};
+  });
+}
 function playFile(kind, url){
-  var a = new Audio(url);
+  var a;
+  if(kind === 'song' && preSong && preSong.url === url){
+    a = preSong.audio;
+    preSong = null;
+  } else {
+    a = new Audio(url);
+  }
   playing = {kind: kind, audio: a};
   setBtn(kind, 'playing');
   a.onended = function(){ setBtn(kind, 'idle'); playing = null; };
@@ -301,7 +320,7 @@ try{
   var saved = localStorage.getItem('thanks-lang');
   if(saved === 'cmn' || saved === 'yue' || saved === 'en'){ setLang(saved); }
   else if(saved === 'zh'){ setLang('cmn'); }
-  else{ tryAutoplay(); }
+  else{ tryAutoplay(); ensureSongPreloaded(); }
 }catch(e){}
 </script>
 </body>
