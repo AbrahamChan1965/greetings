@@ -21,9 +21,10 @@
   body[data-lang="cmn"] .en{display:none}
   body[data-lang="yue"] .en{display:none}
   body[data-lang="en"] .zh{display:none}
-  body[data-lang="cmn"] .poem-yue, body[data-lang="cmn"] .poem-en{display:none}
-  body[data-lang="yue"] .poem-cmn, body[data-lang="yue"] .poem-en{display:none}
-  body[data-lang="en"] .poem-cmn, body[data-lang="en"] .poem-yue{display:none}
+  body[data-lang="cmn"] .poem-yue, body[data-lang="cmn"] .poem-en, body[data-lang="cmn"] .poem-yue-en{display:none}
+  body[data-lang="yue"] .poem-cmn, body[data-lang="yue"] .poem-en, body[data-lang="yue"] .poem-yue{display:none}
+  body[data-lang="en"] .poem-cmn, body[data-lang="en"] .poem-yue, body[data-lang="en"] .poem-yue-en{display:none}
+  .poem-yue-en .en-line{display:block;font-size:14.5px;line-height:1.7;color:#8a7a5c}
   a{color:#8a6d2f}
   .topbar{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;color:#fdf8ec;text-shadow:0 1px 6px rgba(0,0,0,.55)}
   .topbar a{color:#fdf8ec;text-decoration:none;font-weight:700;letter-spacing:.06em}
@@ -179,9 +180,10 @@
   <div class="poem">
     <p class="lines poem-cmn">秋光灑在普利茅斯，<br>海灣靜靜聽濤聲。<br>玉米南瓜，擺滿桌。<br>野味海鮮謝主恩。<br>秋收之後是寒冬，<br>存留性命非偶然。<br>各樣美善上頭來，<br>嗎哪降下似飄雪。<br>天路客與原住民，<br>圍桌同坐一家親。<br>言語不同，相包容，<br>感恩祈禱作歌聲。<br>上主恩典臨眾人，<br>親朋好友同蒙福。<br>數算主恩心安息，<br>年年秋天唱感恩。</p>
     <p class="lines poem-yue">秋光灑在普利茅斯，<br>海灣靜靜聽濤聲。<br>栗米南瓜，擺滿枱。<br>野味海味謝主恩。<br>秋收之後是寒冬，<br>存留性命非偶然。<br>各樣美善上頭來，<br>嗎哪降下似飄雪。<br>天路客與原住民，<br>圍枱同坐一家親。<br>言語不同，相包容，<br>感恩祈禱作歌聲。<br>上主恩典臨眾人，<br>親朋好友同蒙福。<br>數算主恩心安息，<br>年年秋天唱感恩。</p>
+    <p class="lines poem-yue-en">秋光灑在普利茅斯，<br><span class="en-line">Autumn light on Plymouth Bay,</span><br>海灣靜靜聽濤聲。<br><span class="en-line">The bay listens to the waves.</span><br>栗米南瓜，擺滿枱。<br><span class="en-line">Corn and pumpkin fill the board,</span><br>野味海味謝主恩。<br><span class="en-line">Wild game and seafood, thanks to the Lord.</span><br>秋收之後是寒冬，<br><span class="en-line">After the harvest came the winter cold,</span><br>存留性命非偶然。<br><span class="en-line">Our lives were not our own.</span><br>各樣美善上頭來，<br><span class="en-line">Every good gift from above,</span><br>嗎哪降下似飄雪。<br><span class="en-line">Like manna falling as snow.</span><br>天路客與原住民，<br><span class="en-line">The Pilgrim and the Native son</span><br>圍枱同坐一家親。<br><span class="en-line">Sit down as one at the board.</span><br>言語不同，相包容，<br><span class="en-line">Different tongues, they embrace as one,</span><br>感恩祈禱作歌聲。<br><span class="en-line">Thankful prayer becomes a song.</span><br>上主恩典臨眾人，<br><span class="en-line">The Lord's grace falls on all,</span><br>親朋好友同蒙福。<br><span class="en-line">Family and friends are blessed.</span><br>數算主恩心安息，<br><span class="en-line">Counting mercies, hearts at rest,</span><br>年年秋天唱感恩。<br><span class="en-line">Thanksgiving crowns it all.</span></p>
     <p class="lines poem-en">Autumn light on Plymouth Bay,<br>The bay listens to the waves.<br>Corn and pumpkin fill the board,<br>Wild game and seafood, thanks to the Lord.<br>After the harvest came the winter cold,<br>Our lives were not our own.<br>Every good gift from above,<br>Like manna falling as snow.<br>The Pilgrim and the Native son<br>Sit down as one at the board.<br>Different tongues, they embrace as one,<br>Thankful prayer becomes a song.<br>The Lord's grace falls on all,<br>Family and friends are blessed.<br>Counting mercies, hearts at rest,<br>Thanksgiving crowns it all.</p>
-    <button type="button" class="listen" id="poemBtn" onclick="togglePlay('poem')"><span class="zh">▶ 朗誦這首詩</span><span class="en">▶ Listen to this poem</span></button>
-    <p class="hint"><span class="zh">按一下即可聽到朗誦</span><span class="en">Tap to hear it read aloud</span></p>
+    <button type="button" class="listen" id="poemBtn" onclick="togglePlay('song')"><span class="zh">▶ 聽這首歌</span><span class="en">▶ Listen to this song</span></button>
+    <p class="hint"><span class="zh">按一下即可聽到這首歌</span><span class="en">Tap to hear this song</span></p>
   </div>
 
   <footer>
@@ -213,7 +215,7 @@ function setLang(l){
   document.getElementById('btn-yue').classList.toggle('on', l === 'yue');
   document.getElementById('btn-en').classList.toggle('on', l === 'en');
   setBtn('narration', 'idle');
-  setBtn('poem', 'idle');
+  setBtn('song', 'idle');
   try{ localStorage.setItem('thanks-lang', l); }catch(e){}
   tryAutoplay();
 }
@@ -223,8 +225,8 @@ function labelFor(kind, state){
   if(kind === 'narration'){
     return state === 'playing' ? '■' : '▶';
   }
-  if(state === 'playing') return l === 'en' ? '■ Stop' : '■ 停止朗誦';
-  return l === 'en' ? '▶ Listen to this poem' : '▶ 朗誦這首詩';
+  if(state === 'playing') return l === 'en' ? '■ Stop' : '■ 停止播放';
+  return l === 'en' ? '▶ Listen to this song' : '▶ 聽這首歌';
 }
 function setBtn(kind, state){
   var b = btnFor(kind);
@@ -258,8 +260,12 @@ function fileExists(url){
   if(audioCache[url] !== undefined) return Promise.resolve(audioCache[url]);
   return fetch(url, {method: 'HEAD'}).then(function(r){ audioCache[url] = r.ok; return r.ok; }).catch(function(){ audioCache[url] = false; return false; });
 }
-function playRecording(kind, l){
-  var url = AUDIO_BASE + kind + '-' + l + '.mp3';
+function songFile(l){ return l === 'cmn' ? 'song-cmn.mp3' : 'song-en.mp3'; }
+function audioUrl(kind, l){
+  if(kind === 'song') return AUDIO_BASE + songFile(l);
+  return AUDIO_BASE + kind + '-' + l + '.mp3';
+}
+function playFile(kind, url){
   var a = new Audio(url);
   playing = {kind: kind, audio: a};
   setBtn(kind, 'playing');
@@ -271,21 +277,21 @@ function togglePlay(kind){
   if(playing && playing.kind === kind){ stopAll(); return; }
   stopAll();
   var l = lang();
-  var url = AUDIO_BASE + kind + '-' + l + '.mp3';
+  var url = audioUrl(kind, l);
   setBtn(kind, 'playing');
   playing = {kind: kind, audio: null};
   fileExists(url).then(function(ok){
-    if(ok){ playRecording(kind, l); }
+    if(ok){ playFile(kind, url); }
     else{ speakFallback(kind, l); }
   });
 }
 function tryAutoplay(){
   if(playing) return;
   var l = lang();
-  var url = AUDIO_BASE + 'narration-' + l + '.mp3';
+  var url = audioUrl('song', l);
   fileExists(url).then(function(ok){
     if(!ok || playing) return;
-    playRecording('narration', l);
+    playFile('song', url);
   });
 }
 document.addEventListener('pointerdown', function(e){
