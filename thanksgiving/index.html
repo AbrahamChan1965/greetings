@@ -45,6 +45,16 @@
   @keyframes fall{0%{transform:translateY(-12vh);opacity:0}12%{opacity:.92}82%{opacity:.92}100%{transform:translateY(112vh);opacity:0}}
   @keyframes sway{0%,100%{margin-left:0}50%{margin-left:16px}}
   .hero-text{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:26px 22px 34px;text-align:center;color:#fdf8ec;text-shadow:0 2px 10px rgba(0,0,0,.65)}
+  .greet{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;pointer-events:none}
+  .greet span{display:inline-block;font-family:"Noto Serif CJK TC","Songti TC",serif;font-size:clamp(44px,10vw,96px);font-weight:700;letter-spacing:.06em;color:#fff3d0;text-shadow:0 2px 22px rgba(0,0,0,.6),0 0 46px rgba(232,200,120,.65);opacity:0;animation:greetZoom 12s ease-in-out 1.2s infinite}
+  @keyframes greetZoom{
+    0%{opacity:0;transform:scale(.22)}
+    16%{opacity:1}
+    42%{opacity:1;transform:scale(1.12)}
+    55%{opacity:1;transform:scale(1.22)}
+    70%{opacity:0;transform:scale(1.5)}
+    100%{opacity:0;transform:scale(1.5)}
+  }
   .eyebrow{font-size:14px;letter-spacing:.34em;opacity:.92;margin-bottom:10px}
   .verse{font-size:clamp(26px,5vw,40px);line-height:1.5;margin:0;font-weight:600}
   .verse small{display:block;font-size:.62em;letter-spacing:.1em;opacity:.9;margin-top:6px}
@@ -90,6 +100,7 @@
 
 <section class="hero">
   <img class="bg" src="plymouth-1621-v5.jpg" alt="1621 年普利茅斯：清教徒與萬帕諾亞格人圍著長桌，低頭禱告謝恩">
+  <div class="greet" aria-hidden="true"><span class="zh">感恩節快樂</span><span class="en">Happy Thanksgiving</span></div>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
     <symbol id="ic-corn" viewBox="0 0 64 64">
       <g fill="none" stroke="#e8c878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
