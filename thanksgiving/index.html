@@ -24,14 +24,14 @@
   body[data-lang="cmn"] .poem-yue, body[data-lang="cmn"] .poem-en, body[data-lang="cmn"] .poem-yue-en{display:none}
   body[data-lang="yue"] .poem-cmn, body[data-lang="yue"] .poem-en, body[data-lang="yue"] .poem-yue{display:none}
   body[data-lang="en"] .poem-cmn, body[data-lang="en"] .poem-yue, body[data-lang="en"] .poem-yue-en{display:none}
-  .poem-yue-en .en-line{display:block;font-size:14.5px;line-height:1.7;color:#8a7a5c}
+  .poem-yue-en .en-line{display:block;font-size:17px;line-height:1.7;color:#8a7a5c}
   a{color:#8a6d2f}
   .topbar{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;color:#fdf8ec;text-shadow:0 1px 6px rgba(0,0,0,.55)}
   .topbar a{color:#fdf8ec;text-decoration:none;font-weight:700;letter-spacing:.06em}
   .topbar-right{display:flex;align-items:center;gap:14px}
   .tag{font-size:12px;letter-spacing:.22em;opacity:.9}
   .lang-toggle{display:flex;gap:6px}
-  .lang-toggle button{font-family:inherit;font-size:13px;letter-spacing:.08em;padding:5px 12px;border-radius:999px;border:1px solid rgba(253,248,236,.75);background:rgba(20,14,6,.28);color:#fdf8ec;cursor:pointer}
+  .lang-toggle button{font-family:inherit;font-size:15px;letter-spacing:.08em;padding:5px 12px;border-radius:999px;border:1px solid rgba(253,248,236,.75);background:rgba(20,14,6,.28);color:#fdf8ec;cursor:pointer}
   .lang-toggle button.on{background:#e8c878;border-color:#e8c878;color:#2b2118;font-weight:700}
   .hero{position:relative;min-height:100svh;overflow:hidden;background:#2b2118}
   .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block}
@@ -45,32 +45,30 @@
   @keyframes fall{0%{transform:translateY(-12vh);opacity:0}12%{opacity:.92}82%{opacity:.92}100%{transform:translateY(112vh);opacity:0}}
   @keyframes sway{0%,100%{margin-left:0}50%{margin-left:16px}}
   .hero-text{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:26px 22px 34px;text-align:center;color:#fdf8ec;text-shadow:0 2px 10px rgba(0,0,0,.65)}
-  .eyebrow{font-size:12px;letter-spacing:.34em;opacity:.92;margin-bottom:10px}
-  .verse{font-size:clamp(22px,4.4vw,38px);line-height:1.5;margin:0;font-weight:600}
+  .eyebrow{font-size:14px;letter-spacing:.34em;opacity:.92;margin-bottom:10px}
+  .verse{font-size:clamp(26px,5vw,40px);line-height:1.5;margin:0;font-weight:600}
   .verse small{display:block;font-size:.62em;letter-spacing:.1em;opacity:.9;margin-top:6px}
   .paper{max-width:680px;margin:0 auto;padding:44px 22px 30px}
-  h1{font-size:clamp(26px,5vw,36px);line-height:1.4;text-align:center;margin:0 0 26px;color:#5b3f1a}
-  .paper p{margin:0 0 18px;font-size:17px}
+  h1{font-size:clamp(30px,5vw,38px);line-height:1.4;text-align:center;margin:0 0 26px;color:#5b3f1a}
+  .paper p{margin:0 0 20px;font-size:20px}
   h2{font-size:21px;color:#5b3f1a;margin:34px 0 14px;text-align:center}
   .poem{background:#fffdf6;border:1px solid #e3d3ae;border-radius:12px;padding:22px 20px 18px;text-align:center}
-  .poem .lines{font-size:17.5px;line-height:2.05;color:#4a3a22;margin:0 0 16px}
-  .listen{display:inline-block;font-family:inherit;font-size:15.5px;letter-spacing:.06em;padding:10px 22px;border-radius:999px;border:1px solid #c9a24b;background:#c9a24b;color:#2b2118;cursor:pointer}
+  .poem .lines{font-size:20px;line-height:2.05;color:#4a3a22;margin:0 0 16px}
+  .listen{display:inline-block;font-family:inherit;font-size:17px;letter-spacing:.06em;padding:10px 22px;border-radius:999px;border:1px solid #c9a24b;background:#c9a24b;color:#2b2118;cursor:pointer}
   .listen.speaking{background:#8a6d2f;border-color:#8a6d2f;color:#fdf8ec}
-  .poem .hint{font-size:13px;color:#8a7a5c;margin:10px 0 0}
+  .poem .hint{font-size:15px;color:#8a7a5c;margin:10px 0 0}
   .playrow{text-align:center;margin:0 0 28px}
   .playbig{width:88px;height:88px;border-radius:50%;border:1px solid #c9a24b;background:#c9a24b;color:#2b2118;font-size:30px;line-height:1;cursor:pointer;box-shadow:0 4px 18px rgba(139,109,47,.35);animation:pulse 2.6s ease-in-out infinite}
   .playbig.speaking{background:#8a6d2f;border-color:#8a6d2f;color:#fdf8ec;animation:none}
   @keyframes pulse{0%,100%{box-shadow:0 4px 18px rgba(139,109,47,.35)}50%{box-shadow:0 4px 28px rgba(139,109,47,.6)}}
-  footer{border-top:1px solid #e3d3ae;margin-top:34px;padding:20px 0 26px;text-align:center;font-size:14px;color:#8a7a5c;line-height:2}
+  footer{border-top:1px solid #e3d3ae;margin-top:34px;padding:20px 0 26px;text-align:center;font-size:16px;color:#8a7a5c;line-height:2}
   footer a{color:#8a6d2f}
   @media (max-width:520px){
     .topbar{padding:12px 14px}
     .tag{display:none}
-    .lang-toggle button{font-size:12px;padding:4px 10px}
+    .lang-toggle button{padding:6px 12px}
     .hero img.bg{object-position:center 28%}
-    .verse{font-size:22px}
     .paper{padding:34px 18px 22px}
-    .paper p{font-size:16.5px}
     .fall .chip{font-size:12.5px}
     .fall .chip.zh{font-size:13.5px}
   }
