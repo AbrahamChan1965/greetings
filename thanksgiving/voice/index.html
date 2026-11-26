@@ -74,15 +74,15 @@
   }
 </style>
 </head>
-<body data-lang="cmn">
+<body data-lang="yue">
 
 <header class="topbar">
   <a href="https://gls.wordnspirit.com/">← <span class="zh">基督燈臺事工</span><span class="en">Golden Lampstand Ministry</span></a>
   <div class="topbar-right">
     <span class="tag">WORD &amp; SPIRIT · NEW ENGLAND</span>
     <div class="lang-toggle" role="group" aria-label="Language / 語言">
-      <button type="button" id="btn-cmn" class="on" onclick="setLang('cmn')">普通話</button>
-      <button type="button" id="btn-yue" onclick="setLang('yue')">粵語</button>
+      <button type="button" id="btn-yue" class="on" onclick="setLang('yue')">粵語</button>
+      <button type="button" id="btn-cmn" onclick="setLang('cmn')">普通話</button>
       <button type="button" id="btn-en" onclick="setLang('en')">English</button>
     </div>
   </div>
@@ -320,7 +320,7 @@ try{
   var saved = localStorage.getItem('thanks-lang');
   if(saved === 'cmn' || saved === 'yue' || saved === 'en'){ setLang(saved); }
   else if(saved === 'zh'){ setLang('cmn'); }
-  else{ tryAutoplay(); ensureSongPreloaded(); }
+  else{ setLang('yue'); }
 }catch(e){}
 </script>
 </body>
